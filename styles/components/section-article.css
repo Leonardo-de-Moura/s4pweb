@@ -1,0 +1,172 @@
+.section-artigos {
+    max-width: 100%; /* Largura ideal para telas 16:9 */
+    margin: 0 auto;
+	margin-inline: 35px;
+	margin-inline: 45px;
+    padding: 40px 20px; 
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Sombra suave ao redor da seção */
+}
+
+/* ========================================================================= */
+/* --- 2. Cabeçalho (Título e Busca) --- */
+/* (Assume-se a classe .artigos-cabecalho para o div que contém o h2 e a busca) */
+/* ========================================================================= */
+.artigos-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.artigos-cabecalho h2 {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* Contêiner de Busca (Assume-se a classe .artigos-busca) */
+.artigos-busca {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.artigos-busca input[type="text"] {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    width: 250px; 
+}
+
+/* Botão de Busca (Assume-se a classe .botao-busca) */
+.botao-busca {
+    background: #6200EE; /* Cor primária Roxa */
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-busca:hover {
+    background: #4a00cc; 
+}
+
+.botao-busca img {
+    width: 20px; 
+    height: 20px;
+    filter: invert(100%); /* Ícone branco */
+    display: block; 
+}
+
+/* ========================================================================= */
+/* --- 3. Grid de Artigos e Cards --- */
+/* (Assume-se a classe .artigos-grid para o contêiner de todos os cards) */
+/* ========================================================================= */
+.artigos-grid { 
+    display: grid;
+    /* Define o layout de 3 colunas iguais, crucial para o visual 16:9 */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px; 
+}
+
+/* Estilização do Card Individual */
+.card-artigo {
+    background-color: #ffffff;
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-artigo:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.card-artigo img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.card-conteudo {
+    padding: 20px;
+}
+
+/* Categoria (Assume-se a classe .card-categoria) */
+.card-categoria { 
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #6200EE; 
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+/* Título (Assume-se a classe .card-titulo) */
+.card-titulo {
+    font-size: 1.15em;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+}
+
+/* Rodapé (Data e Edição - Assume-se a classe .card-rodape) */
+.card-rodape {
+    font-size: 0.8em;
+    color: #888;
+    display: flex;
+}
+
+.card-rodape span:first-child {
+    margin-right: 15px;
+}
+
+/* Cria o bullet point de separação */
+.card-rodape span:last-child {
+    position: relative;
+    padding-left: 15px; 
+}
+
+.card-rodape span:last-child::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ccc;
+    font-weight: bold;
+}
+
+/* ========================================================================= */
+/* --- 4. Botão "Carregar Mais" --- */
+/* (Assume-se a classe .botao-carregar-mais) */
+/* ========================================================================= */
+.botao-carregar-mais {
+    display: block; 
+    width: 220px; 
+    padding: 14px; 
+    margin: 50px auto 20px auto; 
+    background: transparent;
+    color: #6200EE;
+    border: 2px solid #6200EE; 
+    border-radius: 30px; 
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-carregar-mais:hover {
+    background-color: #6200EE;
+    color: #fff;
+}

@@ -1,24 +1,48 @@
-.header{
-	display: flex;
-	width: 100%;
-	height: 50px;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 20px;
-	color: white;
-	text-transform: uppercase;
-	font-weight: bold;
+.header {
+  position: absolute;
+  display: flex;
+  z-index: 10;
+  background: transparent;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 50px;
 }
-nav ul{
-	display: flex;
+
+.titulo {
+  color: #ffc934;
+  font-weight: 700;
+  /* font-family: Roboto; adicionar fonte roboto usando google fonts */
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
-nav ul li{
-	list-style: none;
-	margin-left: 20px;
+nav ul {
+  display: flex;
+ 
 }
-nav ul li a{
-	text-decoration: none;
-	color: white;
-	font-weight: bold;
-	text-transform: uppercase;
+nav ul li {
+  
+  list-style-type: none;
+  padding-inline: 35px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 15px;
+  color: #ffffff;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+nav ul li a svg{
+  position: relative;
+  top: 3px;
+  right: 6px;
 }

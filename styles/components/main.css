@@ -1,0 +1,126 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 700px;
+}
+.section-destaque {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.destaque {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 672px;
+  padding-left: 50px;
+}
+.span {
+  color: #7063f0;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 1.1rem;
+  letter-spacing: 11.5%;
+  text-transform: uppercase;
+}
+.destaque h2 {
+  color: #0b0814;
+  font-size: 1.7rem;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+.destaque img {
+  max-width: 100%;
+}
+.destaque .info {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  margin-block: 20px;
+  color: #9995a6;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.info ul {
+  display: flex;
+}
+.info ul li {
+  list-style: none;
+  padding-left: 10px;
+}
+.destaque .text {
+  max-width: 100%;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 24px;
+
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+.popular {
+  height: 672px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 45px;
+  width: 40%;
+}
+.popular-title {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-family: Atyp BL Text;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0px;
+}
+.artigo img{
+	transform: scale(0.7);
+}
+.artigo2 {
+  display: flex;
+  height: 160px;
+  flex-direction: column;
+  text-align: center;
+
+}
+.artigo2 span{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.artigo2 ul{
+	display: flex;
+	justify-content: left;
+	padding-top: 15px;
+	
+}
+.artigo2 ul li{
+	list-style: none;
+	color: #9995a6;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.popular .artigo {
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  height: 160px;
+  width: 500px;
+  border-bottom: 1px solid black;
+}
+.section-artigos {
+  background-color: bisque;
+}
