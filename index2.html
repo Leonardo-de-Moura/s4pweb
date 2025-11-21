@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Artigo - Blog</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			background: #f5f5f5;
+		}
+
+		header {
+			background: #0d0d1a;
+			color: white;
+			padding: 20px;
+		}
+
+		.header-inner {
+			max-width: 1200px;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.hero {
+			width: 100%;
+			height: 300px;
+			background: #111;
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+		}
+
+		.card-title {
+			background: white;
+			padding: 20px;
+			width: 60%;
+			border-radius: 10px;
+			margin-bottom: -40px;
+		}
+
+		.content-wrapper {
+			max-width: 800px;
+			margin: 80px auto;
+			background: white;
+			padding: 30px;
+			border-radius: 10px;
+		}
+
+		footer {
+			background: #0d0d1a;
+			color: #ccc;
+			padding: 40px;
+			margin-top: 80px;
+		}
+
+		.similar-section {
+			max-width: 1200px;
+			margin: 60px auto;
+		}
+
+		.similar-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+		}
+
+		.similar-card {
+			background: #1c1c2e;
+			color: white;
+			padding: 20px;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="titulo">S4blog</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href=""><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M9 8H11" stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M5 6.33333L7 8L5 9.66667" stroke="#FFDA34" stroke-width="1.25"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M12 14H4C2.89533 14 2 13.1047 2 12V4C2 2.89533 2.89533 2 4 2H12C13.1047 2 14 2.89533 14 4V12C14 13.1047 13.1047 14 12 14Z"
+								stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>tecnologia</a>
+				</li>
+				<li><a href=""><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M5.33316 2.66673C8.27865 4.13947 11.8603 7.72118 13.3331 10.6667C14.8058 13.6122 13.6119 14.8061 10.6665 13.3333C7.72097 11.8606 4.13926 8.27887 2.66652 5.33337C1.19377 2.38788 2.38767 1.19398 5.33316 2.66673"
+								stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M10.6665 2.66671C13.6119 1.19396 14.8058 2.38786 13.3331 5.33335C11.8604 8.27884 8.27865 11.8605 5.33315 13.3333C2.38766 14.806 1.19377 13.6121 2.66652 10.6666C4.13926 7.72116 7.72096 4.13946 10.6665 2.66671"
+								stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+							<path
+								d="M8.24129 8C8.24129 8.138 8.13329 8.25 7.99996 8.25C7.86663 8.25 7.75863 8.138 7.75863 8C7.75863 7.862 7.86663 7.75 7.99996 7.75C8.13329 7.75 8.24129 7.862 8.24129 8"
+								stroke="#9995A6" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						react JS</a></li>
+				<li><a href=""><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.99917 9.33389L4.66528 8L5.99917 6.66611" stroke="#FFDA34" stroke-width="1.25"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M10.0009 6.66611L11.3347 8L10.0009 9.33389" stroke="#FFDA34" stroke-width="1.25"
+								stroke-linecap="round" stroke-linejoin="round" />
+							<rect x="1.99744" y="1.9975" width="12.005" height="12.005" stroke="#FFDA34"
+								stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+							<path d="M8.51756 5.99917L7.40576 10.0008" stroke="#FFDA34" stroke-width="1.25"
+								stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						HTML & CSS</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="hero">
+		<div class="card-title">
+			<h2>Como o React JS mudou a forma de construir sistemas modernos.</h2>
+			<small>por admin — 26 de julho, 2024</small>
+		</div>
+	</div>
+
+	<div class="content-wrapper">
+		<h3>Por que usar React?</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+		<h3>Sobre o ecossistema</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+
+		<h3>Como utilizar a biblioteca</h3>
+		<ul>
+			<li>Primeiro passo</li>
+			<li>Segundo passo</li>
+			<li>Terceiro passo</li>
+		</ul>
+
+		<h3>Conclusão</h3>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+	</div>
+
+
+	<footer class="main-footer">
+		
+		<div class="footer-content-wrapper">
+			<div class="footer-col footer-info">
+				<h3>S4Blog</h3>
+				<p>Tudo o que você precisa para evoluir no front-end. Conteúdo atualizado, direto e feito por quem vive
+					código.</p>
+			</div>
+
+			<div class="footer-col footer-menu">
+				<h4>Menu</h4>
+				<ul>
+					<li><a href="#">Tecnologia</a></li>
+					<li><a href="#">React JS</a></li>
+					<li><a href="#">HTML & CSS</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<a href="#top" class="back-to-top" aria-label="Voltar ao topo">
+			<span class="arrow-up"></span>
+		</a>
+	</footer>
+
+</body>
+
+</html>
