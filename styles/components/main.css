@@ -82,30 +82,31 @@
   font-size: 24px;
   letter-spacing: 0px;
 }
-.artigo img{
-	transform: scale(0.7);
+.artigo img {
+  margin-block: auto;
+  width: 120px;
+  height: 120px;
 }
 .artigo2 {
   display: flex;
   height: 160px;
   flex-direction: column;
   text-align: center;
+}
+.artigo2 span {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.artigo2 ul {
+  display: flex;
+  justify-content: left;
+  padding-top: 15px;
+}
 
-}
-.artigo2 span{
-	margin-top: 20px;
-	margin-bottom: 20px;
-	text-align: left;
-}
-.artigo2 ul{
-	display: flex;
-	justify-content: left;
-	padding-top: 15px;
-	
-}
-.artigo2 ul li{
-	list-style: none;
-	color: #9995a6;
+.artigo2 ul li {
+  list-style: none;
+  color: #9995a6;
   font-family: Inter;
   font-weight: 500;
   font-style: Medium;
@@ -113,13 +114,15 @@
   line-height: 150%;
   letter-spacing: 0%;
 }
-.popular .artigo {
+.artigo {
+  padding: 0;
   display: flex;
-  margin: 30px;
-  justify-content: center;
-  height: 160px;
   width: 500px;
+  justify-content: space-between;
   border-bottom: 1px solid black;
+}
+.artigo2 {
+  margin-right: 80px;
 }
 .section-artigos {
   background-color: bisque;
