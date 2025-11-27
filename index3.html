@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="styles.css">
+	<script defer src="scripts/modzals.js"></script>
+	<script type="module" defer src="scripts/server/main-index3.js"></script>
+
+
 </head>
 
 <body>
@@ -30,69 +34,11 @@
 			</div>
 
 			<div class="artigos-grid">
-				<div class="card-artigo">
-					<img src="assets/image copy 5.png" alt="Pessoa usando óculos VR">
-					<div class="card-conteudo">
-						<span>Tecnologia</span>
-						<p>Você fica inseguro(a) na hora de escrever?</p>
-						<div class="card-rodape">
-							<span>16, Fev</span>
-							<span>Editado há 12 minutos</span>
-						</div>
-					</div>
-				</div>
-				<div class="card-artigo">
-					<img src="assets/image copy 4.png" alt="Laptop e café">
-					<div class="card-conteudo">
-						<span>Tecnologia</span>
-						<p>Você fica inseguro(a) na hora de escrever?</p>
-						<div class="card-rodape">
-							<span>16, Fev</span>
-							<span>Editado há 12 minutos</span>
-						</div>
-					</div>
-				</div>
-				<div class="card-artigo">
-					<img src="assets/image copy 5.png" alt="Código em tela de computador">
-					<div class="card-conteudo">
-						<span>Tecnologia</span>
-						<p>React Native Weekend - 21' na minha visão</p>
-						<div class="card-rodape">
-							<span>16, Fev</span>
-							<span>Editado há 12 minutos</span>
-						</div>
-					</div>
-				</div>
-				<div class="card-artigo">
-					<img src="assets/image copy 6.png" alt="Código em tela de computador">
-					<div class="card-conteudo">
-						<span>Tecnologia</span>
-						<p>React Native Weekend - 21' na minha visão</p>
-						<div class="card-rodape">
-							<span>16, Fev</span>
-							<span>Editado há 12 minutos</span>
-						</div>
-					</div>
-				</div>
-				<div class="card-artigo">
-					<img src="assets/image copy 2.png" alt="Código em tela de computador">
-					<div class="card-conteudo">
-						<span>Tecnologia</span>
-						<p>React Native Weekend - 21' na minha visão</p>
-						<div class="card-rodape">
-							<span>16, Fev</span>
-							<span>Editado há 12 minutos</span>
-						</div>
-					</div>
-				</div>
-				<div class="card-artigo">
-					<img src="assets/image copy 4.png" alt="Código em tela de computador">
-					<div class="card-conteudo">
-						<span>Tecnologia</span>
-						<p>React Native Weekend - 21' na minha visão</p>
-						<div class="card-rodape">
-							<span>16, Fev</span>
-							<span>Editado há 12 minutos</span>
+
+
+
+				
+
 						</div>
 					</div>
 				</div>
@@ -101,6 +47,41 @@
 			<button class="botao-carregar-mais">Carregar mais</button>
 		</section>
 	</main>
+
+
+
+	<!-- Modal Criar -->
+	<div id="modalCriar" class="modal">
+		<h2>Criar postagem</h2>
+		<input type="text" placeholder="Informe o nome">
+		<input type="text" placeholder="Informe o título">
+		<input type="text" placeholder="Informe a categoria">
+		<input type="text" placeholder="Informe a URL de capa">
+		<textarea rows="4" placeholder="Digite o conteúdo"></textarea>
+		<button>Salvar</button>
+	</div>
+
+	<!-- Modal Editar -->
+	<div id="modalEditar" class="modal">
+		<h2>Editar postagem</h2>
+		<input type="text" value="Helena Souza">
+		<input type="text" value="Criando front-end com React JS">
+		<input type="text" value="Tecnologia">
+		<input type="text" value="https://exemplo.com.br/imagem.jpg">
+		<textarea rows="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+		<button>Salvar</button>
+	</div>
+
+	<!-- Modal Excluir -->
+	<div id="modalExcluir" class="modal">
+		<h2>Excluir postagem</h2>
+		<p>Tem certeza que deseja excluir esta postagem? Ao clicar em sim o processo não pode ser desfeito.</p>
+		<button class="btn-excluir">Excluir</button>
+		<button class="btn-cancelar">Cancelar</button>
+	</div>
+
+
+
 </body>
 
 </html>
