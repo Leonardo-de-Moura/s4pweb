@@ -7,22 +7,23 @@
 }
 
 header {
-  width: 80%;
+  width: 65%;
   height: 60px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-
   line-height: 60px;
+}
+header h1, span{
+  color: #7063F0;
 }
 
 .section-artigos {
-  max-width: 80%; /* Largura ideal para telas 16:9 */
+  max-width: 65%; /* Largura ideal para telas 16:9 */
   margin: auto;
   margin-top: 60px;
   padding: 40px 20px;
   height: 800px;
-
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); /* Sombra suave ao redor da seção */
 }
 
@@ -64,18 +65,27 @@ header {
 
 /* Botão de Busca (Assume-se a classe .botao-busca) */
 .botao-busca {
-  background: #6200ee; /* Cor primária Roxa */
+  background: #7063f0; /* Cor primária Roxa */
   border: none;
   padding: 15px 25px;
   cursor: pointer;
-  transition: background-color 0.3s;
+ 
+  width: 169px;
+  height: 56px;
+  top: 117px;
+  left: 1071px;
+  border-radius: 8px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
   color: white;
 }
 
-.botao-busca:hover {
-  background: #4a00cc;
+.botao-busca svg{
+  position: relative;
+  top: 2.5px;
 }
-
 /* ========================================================================= */
 /* --- 3. Grid de Artigos e Cards --- */
 /* (Assume-se a classe .artigos-grid para o contêiner de todos os cards) */
@@ -85,6 +95,9 @@ header {
   /* Define o layout de 3 colunas iguais, crucial para o visual 16:9 */
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+}
+.artigos-grid > .card-artigo:nth-last-child(-n + 3) button {
+  display: none;
 }
 
 /* Estilização do Card Individual */
@@ -110,15 +123,20 @@ header {
 
 .card-conteudo {
   padding: 30px;
- 
+
   display: flex;
   flex-direction: column;
-  
+
   align-items: space-between;
 }
-.card-conteudo p{
-  height: 40px;
-
+.card-conteudo p {
+  height: 50px;
+  width: 350px;
+  position: relative;
+  right: 27px;
+  text-align: left;
+  font-size: 1.3em;
+  
 }
 
 /* Categoria (Assume-se a classe .card-categoria) */
@@ -208,8 +226,8 @@ header {
 
 /* BOTÃO EXCLUIR (vermelho) */
 .btn-excluir {
-  min-width: 180px;
-  height:45px;
+  min-width: 140px;
+  height: 45px;
   text-align: center;
   background-color: #f44336;
   color: white;
@@ -227,8 +245,8 @@ header {
 
 /* BOTÃO EDITAR (azul) */
 .btn-editar {
-  height:45px;
-  min-width: 180px;
+  height: 45px;
+  min-width: 150px;
   background-color: #2962ff;
   color: white;
   border: none;
@@ -243,11 +261,9 @@ header {
   background-color: #0039cb;
 }
 .botoes {
-  
   display: flex;
   min-width: 100%;
   justify-content: space-between;
-  
 }
 
 /* Estilo comum dos modais */

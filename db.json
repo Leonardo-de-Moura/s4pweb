@@ -1,85 +1,17 @@
 {
   "posts": [
     {
-      "id": "1",
-      "title": "O impacto da Inteligência Artificial na análise de dados",
-      "subtitle": "A IA como aliada das empresas modernas",
-      "content": [
-        "A Inteligência Artificial tornou-se parte indispensável dos processos de análise de dados. Com algoritmos de machine learning, é possível prever cenários e extrair insights valiosos.",
-        "Empresas de todos os tamanhos têm adotado soluções de IA para melhorar a tomada de decisão.",
-        "O futuro aponta para automações ainda mais avançadas, com IA generativa e ferramentas autônomas."
-      ],
-      "author": "Ana Rodrigues",
-      "category": "Tecnologia",
-      "tags": [
-        "ia",
-        "machine learning",
-        "dados"
-      ],
-      "image": "https://img.freepik.com/fotos-gratis/closeup-tiro-de-uma-linda-borboleta-com-texturas-interessantes-em-uma-flor-de-petalas-de-laranja_181624-7640.jpg?semt=ais_hybrid&w=740&q=80",
-      "createdAt": "2024-06-03T11:20:00",
-      "updatedAt": "2024-06-03T11:20:00"
-    },
-    {
-      "id": "2",
+      "author": "Fernanda Lima",
       "title": "A ascensão dos Headless CMS no desenvolvimento moderno",
-      "subtitle": "Como ferramentas como Strapi e Contentful estão transformando projetos",
+      "category": "Tecnologia",
+      "image": "https://static.vecteezy.com/ti/fotos-gratis/t2/42730459-leao-perigo-animal-animais-selvagens-natureza-floresta-foto.jpg",
       "content": [
         "Headless CMS permitem separar completamente frontend e backend, oferecendo liberdade total para desenvolvedores.",
         "Com APIs flexíveis, essas ferramentas trazem mais escalabilidade e performance.",
         "A tendência é que se tornem padrão em projetos complexos."
       ],
-      "author": "Fernanda Lima",
-      "category": "Tecnologia",
-      "tags": [
-        "cms",
-        "headless",
-        "api"
-      ],
-      "image": "https://static.vecteezy.com/ti/fotos-gratis/t2/42730459-leao-perigo-animal-animais-selvagens-natureza-floresta-foto.jpg",
-      "createdAt": "2024-06-10T08:20:00",
-      "updatedAt": "2024-06-10T08:20:00"
-    },
-    {
-      "id": "3",
-      "title": "5 dicas para melhorar sua produtividade como desenvolvedor",
-      "subtitle": "Pequenas mudanças que fazem grande diferença",
-      "content": [
-        "A produtividade do desenvolvedor está diretamente ligada ao ambiente de trabalho e às ferramentas utilizadas.",
-        "Dica 1: utilize atalhos de teclado e automações.",
-        "Dica 2: organize seu código e mantenha padrões consistentes.",
-        "Dica 3: aprenda a priorizar tarefas de forma estratégica."
-      ],
-      "author": "Lucas Pereira",
-      "category": "Produtividade",
-      "tags": [
-        "produtividade",
-        "trabalho",
-        "dev"
-      ],
-      "image": "https://img.freepik.com/fotos-gratis/campo-de-lavanda-ao-por-do-sol-perto-de-valensole_268835-3910.jpg?semt=ais_hybrid&w=740&q=80",
-      "createdAt": "2024-06-12T16:10:00",
-      "updatedAt": "2024-06-12T16:10:00"
-    },
-    {
-      "id": "4",
-      "title": "Como drones estão transformando a logística mundial",
-      "subtitle": "A entrega autônoma está mais próxima do que imaginamos",
-      "content": [
-        "Drones têm sido usados para entregas rápidas e monitoramento em áreas remotas.",
-        "Empresas como Amazon estão testando soluções de entrega aérea há anos.",
-        "Os desafios envolvem segurança, autonomia e regulamentação."
-      ],
-      "author": "Ricardo Alves",
-      "category": "Tecnologia",
-      "tags": [
-        "drones",
-        "logistica",
-        "inovação"
-      ],
-      "image": "https://i.pinimg.com/236x/22/a5/75/22a5750f86f5bde10e03b89459125bef.jpg",
-      "createdAt": "2024-06-14T10:50:00",
-      "updatedAt": "2024-06-14T10:50:00"
+      "updatedAt": "2025-11-28T13:22:09.951Z",
+      "id": "2"
     },
     {
       "id": "5",
@@ -102,24 +34,40 @@
       "updatedAt": "2024-06-16T12:00:00"
     },
     {
-      "id": "6",
-      "title": "As diferenças entre monolitos e microsserviços",
-      "subtitle": "Qual arquitetura escolher para seu projeto?",
+      "id": "d42e",
+      "author": "ffffff",
+      "title": "fffffffffff",
+      "category": "fffffffffff",
+      "image": "ffffffffff",
       "content": [
-        "Monolitos são sistemas unificados e fáceis de gerenciar inicialmente.",
-        "Microsserviços oferecem escalabilidade, mas trazem mais complexidade inicial.",
-        "A escolha depende do tamanho da equipe e da previsão de crescimento."
+        "ffffffffffffff"
       ],
-      "author": "João Mendes",
-      "category": "Arquitetura",
-      "tags": [
-        "microsservicos",
-        "arquitetura",
-        "devops"
+      "createdAt": "2025-11-28T13:24:18.790Z",
+      "updatedAt": "2025-11-28T13:24:18.790Z"
+    },
+    {
+      "id": "d9f4",
+      "author": "ddddd",
+      "title": "ddddddd",
+      "category": "dddddddd",
+      "image": "ddddddd",
+      "content": [
+        "dddddddd"
       ],
-      "image": "https://www.bonsfluidos.com.br/wp-content/uploads/2020/04/entre-em-contato-com-a-natureza-atraves-de-imagens-1101297.jpg",
-      "createdAt": "2024-06-18T14:15:00",
-      "updatedAt": "2024-06-18T14:15:00"
+      "createdAt": "2025-11-28T13:25:55.087Z",
+      "updatedAt": "2025-11-28T13:25:55.087Z"
+    },
+    {
+      "id": "3454",
+      "author": "x",
+      "title": "xxxxxx",
+      "category": "xxx",
+      "image": "xxxxx",
+      "content": [
+        "xxxxxxxxxxxxxxx"
+      ],
+      "createdAt": "2025-11-28T13:26:51.382Z",
+      "updatedAt": "2025-11-28T13:26:51.382Z"
     }
   ],
   "categories": [
