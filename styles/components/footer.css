@@ -1,128 +1,91 @@
-/* ========================================================================= */
-/* --- FOOTER: Estilo Geral e Container --- */
-/* ========================================================================= */
 .main-footer {
-    background-color: #1f1d2b; /* Cor de fundo escura, próxima ao preto/roxo escuro */
-    color: #f0f0f0; /* Cor do texto claro */
-    padding: 60px 20px;
-    position: relative;
-	top: 1600px;
-	bottom: 0;
-	 /* Necessário para posicionar o botão 'Voltar ao Topo' */
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 60px 20px;
+  position: relative;
+  top: 1600px;
+  bottom: 0;
+  height: 250px;
+  z-index: 10;
 }
 
-/* Centraliza e define a largura máxima do conteúdo dentro do footer */
 .footer-content-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex; /* Habilita Flexbox para alinhar colunas */
-    justify-content: space-between; /* Distribui o espaço entre as colunas */
-    gap: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  gap: 40px;
+  margin-inline: 20px;
 }
 
-/* ========================================================================= */
-/* --- Colunas (Info e Menu) --- */
-/* ========================================================================= */
 .footer-col {
-    /* Define o espaço que cada coluna pode ocupar */
-    flex-basis: 30%; /* Coluna de info maior */
+  flex-basis: 30%;
 }
 
 .footer-menu {
-    flex-basis: 20%; /* Coluna de menu menor */
-    min-width: 150px; /* Garante que o menu não fique muito estreito */
+  margin-left: 300px;
+  flex-basis: 20%;
+  min-width: 150px;
+}
+.link svg{
+    position: relative;
+    top: 3px;
 }
 
-/* Título S4Blog */
 .footer-info h3 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--color-white);
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
-/* Parágrafo de descrição */
 .footer-info p {
-    font-size: 0.95em;
-    line-height: 1.6;
-    color: #b0b0b0; /* Texto secundário mais claro */
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: var(--color-text-description);
 }
 
-/* Título Menu */
 .footer-menu h4 {
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #ffffff;
-    margin-top: 0;
-    margin-bottom: 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
-/* Lista do Menu */
 .footer-menu ul {
-    list-style: none; /* Remove os marcadores de lista */
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .footer-menu li {
-    margin-bottom: 10px;
-    font-size: 0.95em;
+  margin-bottom: 10px;
+  font-size: 0.95em;
 }
 
 .footer-menu a {
-    color: #b0b0b0; 
-    text-decoration: none;
-    transition: color 0.3s;
-    /* Para o ícone (pode ser substituído por um ícone real ou Font Awesome) */
-    position: relative; 
-    padding-left: 20px; 
-}
-
-/* Simula o ícone de seta ou quadrado ao lado do link */
-.footer-menu a::before {
-    content: "▶"; /* Triângulo ou outro marcador */
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) scale(0.6);
-    color: #6200EE; /* Cor roxa da categoria */
-    font-size: 1em;
-    line-height: 1;
+  color: var(--color-text-description);
+  text-decoration: none;
+  transition: color 0.3s;
+  padding-left: 20px;
 }
 
 .footer-menu a:hover {
-    color: #ffffff; /* Brilho no hover */
+  color: var(--color-white);
 }
 
-/* ========================================================================= */
-/* --- Botão "Voltar ao Topo" (Seta) --- */
-/* ========================================================================= */
 .back-to-top {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 80px;
-    right: 60px;
-    background-color: #6200EE; /* Fundo roxo */
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.back-to-top:hover {
-    background-color: #4a00cc;
-}
-
-/* Estilo da Seta (usando bordas para criar um triângulo) */
-.arrow-up {
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 10px solid #ffffff; /* Cor da seta branca */
-    margin-bottom: 3px; /* Ajuste vertical */
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 80px;
+  right: 60px;
+  border: 1px solid var(--color-white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }

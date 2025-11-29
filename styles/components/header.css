@@ -12,36 +12,33 @@
 
 .titulo {
   color: #ffc934;
-  font-weight: 700;
-  /* font-family: Roboto; adicionar fonte roboto usando google fonts */
-  font-style: Bold;
-  font-size: 24px;
-  line-height: 150%;
-  letter-spacing: 0%;
+  font: var(--font-1);
+  font-style: bold;
+}
+.titulo .span {
+  font-size: inherit;
+  background: var(--color-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 nav ul {
   display: flex;
- 
 }
 nav ul li {
-  
   list-style-type: none;
   padding-inline: 35px;
 }
 
 nav ul li a {
   text-decoration: none;
-  font-family: Inter;
-  font-weight: 500;
+  font: var(--font-2);
   font-style: Medium;
-  font-size: 15px;
-  color: #ffffff;
-  line-height: 150%;
-  letter-spacing: 0%;
+  color: var(--color-white);
   text-transform: capitalize;
 }
 
-nav ul li a svg{
+nav ul li a svg {
   position: relative;
   top: 3px;
   right: 6px;

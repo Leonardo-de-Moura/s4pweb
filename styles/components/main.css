@@ -19,8 +19,8 @@
   padding-left: 50px;
 }
 .span {
-  color: #7063f0;
-  font-family: Inter;
+  color: var(--color-purple);
+  font: var(--font-2);
   font-weight: 600;
   font-style: Semi Bold;
   font-size: 1.1rem;
@@ -28,7 +28,7 @@
   text-transform: uppercase;
 }
 .destaque h2 {
-  color: #0b0814;
+  color: var(--color-black);
   font-size: 1.7rem;
   margin-top: 20px;
   margin-bottom: 25px;
@@ -41,8 +41,8 @@
   max-width: 100%;
   justify-content: space-between;
   margin-block: 20px;
-  color: #9995a6;
-  font-family: Inter;
+  color: var(--color-text-description);
+  font: var(--font-2);
   font-weight: 500;
   font-style: Medium;
   font-size: 14px;
@@ -55,16 +55,28 @@
 .info ul li {
   list-style: none;
   padding-left: 10px;
+  font: var(--font-1);
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  color: var(--color-text-description);
 }
+.info ul li svg{
+  position: relative;
+  top: 3px;
+  right: 3px;
+}
+ .mid{
+  position: relative;
+  bottom: 5px;
+}
+
 .destaque .text {
   max-width: 100%;
-  font-family: Inter;
+  font: var(--font-2);
   font-weight: 600;
   font-style: Semi Bold;
   font-size: 24px;
-
-  line-height: 120%;
-  letter-spacing: 0px;
 }
 .popular {
   height: 672px;
@@ -77,10 +89,7 @@
 .popular-title {
   margin-top: 40px;
   margin-bottom: 5px;
-  font-family: Atyp BL Text;
-  font-weight: 600;
-  font-size: 24px;
-  letter-spacing: 0px;
+  font: var(--font-1);
 }
 .artigo img {
   margin-block: auto;
@@ -100,19 +109,17 @@
 }
 .artigo2 ul {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   padding-top: 15px;
 }
 
 .artigo2 ul li {
   list-style: none;
-  color: #9995a6;
-  font-family: Inter;
+  color: var(--color-text-description);
+  font: var(--font-1);
   font-weight: 500;
   font-style: Medium;
   font-size: 14px;
-  line-height: 150%;
-  letter-spacing: 0%;
 }
 .artigo {
   padding: 0;
@@ -123,7 +130,4 @@
 }
 .artigo2 {
   margin-right: 80px;
-}
-.section-artigos {
-  background-color: bisque;
 }

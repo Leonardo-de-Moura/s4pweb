@@ -16,65 +16,68 @@
   width: 130px;
   margin: auto;
   border-radius: 15px;
-  line-height: 33px;
+  padding: 6px;
   background-color: #ffc9344d;
-  color: #ffc934;
-  font-family: Inter;
+  color: var(--color-yellow);
+  font: var(--font-2);
   font-weight: 600;
   font-style: Semi Bold;
   font-size: 14px;
-  letter-spacing: 0%;
   text-transform: uppercase;
 }
 .hero-title {
   width: 915px;
   height: 70px;
-  font-family: Inter;
+  font: var(--font-2);
   font-weight: 600;
-  font-style:  Bold;
+  font-style: Bold;
   font-size: 48px;
   line-height: 70px;
-  color: white;
+  color: var(--color-white);
 }
 
 .hero-title-description {
   width: 599px;
   height: 48px;
   margin: auto;
-  color: #c4c4c4;
-  font-family: Inter;
+  color: var(--color-text-description);
+  font: var(--font-2);
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
-  line-height: 150%;
 }
 .div-button {
-  width: 380;
-  height: 48;
   margin-top: 20px;
 }
 .div-button > :first-child {
-  background: #ffc934;
-  width: 186;
-  height: 48;
+  background: var(--color-yellow);
+  width: 186px;
+  height: 48px;
   border-radius: 8px;
-  padding-top: 16px;
+  padding-top: 10px;
   padding-right: 32px;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
   padding-left: 32px;
   border-width: 1px;
-  color: #1C162E;
-;
+  color: var(--color-black);
+  font: var(--font-2);
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
 }
 .div-button > :last-child {
-  width: 186;
-  height: 48;
+   background: var(--color-purple);
+  width: 186px;
+  height: 48px;
   border-radius: 8px;
-  padding-top: 16px;
+  padding-top: 10px;
   padding-right: 32px;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
   padding-left: 32px;
   border-width: 1px;
-  background: #7063f0;
-  color:white;
+  color: var(--color-white);
+  font: var(--font-2);
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 16px;
 }

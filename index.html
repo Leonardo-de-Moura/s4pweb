@@ -4,14 +4,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>page 1</title>
+	<title>home</title>
 	<link rel="stylesheet" href="styles/import.css">
-	<script defer src="scripts/initial-page.js"></script>
+	<script defer src="scripts/home_page.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
 	<header class="header">
-		<h1 class="titulo">S4blog</h1>
+		<h1 class="titulo"><span class="span">S4</span>blog</h1>
 		<nav>
 			<ul>
 				<li>
@@ -58,14 +68,14 @@
 	<main>
 		<section class="hero">
 			<section class="hero-container">
-				<p class="hero-text">tech blog</p>
-				<h1 class="hero-title">o blog para quem vive e respira código.</h1>
+				<p class="hero-text">Tech blog 🤓</p>
+				<h1 class="hero-title">O blog para quem vive e respira código.</h1>
 				<p class="hero-title-description">Tudo o que você precisa para evoluir no front-end. Conteúdo
 					atualizado, direto e feito por quem vive
 					código.</p>
 				<div class="div-button">
-					<button id="btn-mais">conhecer mais</button>
-					<button id="btn-explorar">explorar artigos</button>
+					<button id="btn-mais">Conhecer mais</button>
+					<button id="btn-explorar">Explorar artigos</button>
 				</div>
 			</section>
 
@@ -78,8 +88,43 @@
 						<div class="info">
 							<p class="span"> tecnologia</p>
 							<ul>
-								<li>16, fev</li>
-								<li> editado há 12 minutos</li>
+								<li>
+									<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M4.66522 11.3348L7.93658 11.3595" stroke="#9995A6"
+											stroke-width="1.25" />
+										<path d="M7.99994 8.66697H11.3347" stroke="#9995A6" stroke-width="1.25" />
+										<path d="M14.0024 5.99924H1.99744" stroke="#7063F0" stroke-width="1.25" />
+										<path d="M5.33219 1.66406V3.6649" stroke="#7063F0" stroke-width="1.25" />
+										<path d="M10.6678 1.66406V3.6649" stroke="#7063F0" stroke-width="1.25" />
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M12.0016 14.0026H3.99827C2.89314 14.0026 1.99744 13.1069 1.99744 12.0018V4.66538C1.99744 3.56026 2.89314 2.66455 3.99827 2.66455H12.0016C13.1067 2.66455 14.0024 3.56026 14.0024 4.66538V12.0018C14.0024 13.1069 13.1067 14.0026 12.0016 14.0026Z"
+											stroke="#7063F0" stroke-width="1.25" />
+									</svg>
+
+									16, fev
+								</li>
+								<li class="mid">
+									<svg width="5" height="5" viewBox="0 0 5 5" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M2.18751 4.37494C1.78646 4.37494 1.42022 4.27717 1.08878 4.08162C0.757345 3.88276 0.492193 3.61761 0.29333 3.28617C0.0977802 2.95473 5.55813e-06 2.58849 5.55813e-06 2.18744C5.55813e-06 1.78309 0.0977802 1.41685 0.29333 1.08872C0.492193 0.757283 0.757345 0.493789 1.08878 0.29824C1.42022 0.099376 1.78646 -5.57899e-05 2.18751 -5.57899e-05C2.59186 -5.57899e-05 2.9581 0.099376 3.28623 0.29824C3.61767 0.493789 3.88116 0.757283 4.07671 1.08872C4.27557 1.41685 4.37501 1.78309 4.37501 2.18744C4.37501 2.58849 4.27557 2.95473 4.07671 3.28617C3.88116 3.61761 3.61767 3.88276 3.28623 4.08162C2.9581 4.27717 2.59186 4.37494 2.18751 4.37494Z"
+											fill="#393C40" />
+									</svg>
+								</li>
+
+								<li> <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M5.33221 11.6682L6.6661 13.0021L5.33221 14.336" stroke="#9995A6"
+											stroke-width="1.25" />
+										<path d="M6.6661 13.0021H2.66443" stroke="#9995A6" stroke-width="1.25" />
+										<path
+											d="M9.33391 13.5183C11.828 12.9509 13.6886 10.8652 13.9687 8.32272C14.2488 5.78023 12.8869 3.33955 10.5761 2.24274C8.26536 1.14593 5.51337 1.63399 3.72067 3.45853C1.92798 5.28307 1.48846 8.04323 2.62578 10.3343"
+											stroke="#7063F0" stroke-width="1.25" />
+										<path d="M7.85724 5.64099V7.98597L9.70067 9.11044" stroke="#7063F0"
+											stroke-width="1.25" />
+									</svg>
+									editado há 12 minutos</li>
 							</ul>
 						</div>
 						<div class="text">
@@ -93,9 +138,17 @@
 								<img src="assets/image copy.png" alt="">
 								<div class="artigo2">
 									<span class="span">tecnologia</span>
-									<p>voce fica inseguro na hora de escrever</p>
+									<p>Você fica inseguro(a) na hora de escrever?</p>
 									<ul>
 										<li>16, fev</li>
+										<li class="mid">
+											<svg width="5" height="5" viewBox="0 0 5 5" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2.18751 4.37494C1.78646 4.37494 1.42022 4.27717 1.08878 4.08162C0.757345 3.88276 0.492193 3.61761 0.29333 3.28617C0.0977802 2.95473 5.55813e-06 2.58849 5.55813e-06 2.18744C5.55813e-06 1.78309 0.0977802 1.41685 0.29333 1.08872C0.492193 0.757283 0.757345 0.493789 1.08878 0.29824C1.42022 0.099376 1.78646 -5.57899e-05 2.18751 -5.57899e-05C2.59186 -5.57899e-05 2.9581 0.099376 3.28623 0.29824C3.61767 0.493789 3.88116 0.757283 4.07671 1.08872C4.27557 1.41685 4.37501 1.78309 4.37501 2.18744C4.37501 2.58849 4.27557 2.95473 4.07671 3.28617C3.88116 3.61761 3.61767 3.88276 3.28623 4.08162C2.9581 4.27717 2.59186 4.37494 2.18751 4.37494Z"
+													fill="#393C40" />
+											</svg>
+										</li>
 										<li> editado há 12 minutos</li>
 									</ul>
 								</div>
@@ -104,9 +157,17 @@
 								<img src="assets/image copy 2.png" alt="">
 								<div class="artigo2">
 									<span class="span">tecnologia</span>
-									<p>voce fica inseguro na hora de escrever</p>
+									<p>Você fica inseguro(a) na hora de escrever?</p>
 									<ul>
 										<li>16, fev</li>
+										<li class="mid">
+											<svg width="5" height="5" viewBox="0 0 5 5" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2.18751 4.37494C1.78646 4.37494 1.42022 4.27717 1.08878 4.08162C0.757345 3.88276 0.492193 3.61761 0.29333 3.28617C0.0977802 2.95473 5.55813e-06 2.58849 5.55813e-06 2.18744C5.55813e-06 1.78309 0.0977802 1.41685 0.29333 1.08872C0.492193 0.757283 0.757345 0.493789 1.08878 0.29824C1.42022 0.099376 1.78646 -5.57899e-05 2.18751 -5.57899e-05C2.59186 -5.57899e-05 2.9581 0.099376 3.28623 0.29824C3.61767 0.493789 3.88116 0.757283 4.07671 1.08872C4.27557 1.41685 4.37501 1.78309 4.37501 2.18744C4.37501 2.58849 4.27557 2.95473 4.07671 3.28617C3.88116 3.61761 3.61767 3.88276 3.28623 4.08162C2.9581 4.27717 2.59186 4.37494 2.18751 4.37494Z"
+													fill="#393C40" />
+											</svg>
+										</li>
 										<li> editado há 12 minutos</li>
 									</ul>
 								</div>
@@ -115,9 +176,17 @@
 								<img src="assets/image copy 3.png" alt="">
 								<div class="artigo2">
 									<span class="span">tecnologia</span>
-									<p>voce fica inseguro na hora de escrever</p>
+									<p>Você fica inseguro(a) na hora de escrever?</p>
 									<ul>
 										<li>16, fev</li>
+										<li class="mid">
+											<svg width="5" height="5" viewBox="0 0 5 5" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M2.18751 4.37494C1.78646 4.37494 1.42022 4.27717 1.08878 4.08162C0.757345 3.88276 0.492193 3.61761 0.29333 3.28617C0.0977802 2.95473 5.55813e-06 2.58849 5.55813e-06 2.18744C5.55813e-06 1.78309 0.0977802 1.41685 0.29333 1.08872C0.492193 0.757283 0.757345 0.493789 1.08878 0.29824C1.42022 0.099376 1.78646 -5.57899e-05 2.18751 -5.57899e-05C2.59186 -5.57899e-05 2.9581 0.099376 3.28623 0.29824C3.61767 0.493789 3.88116 0.757283 4.07671 1.08872C4.27557 1.41685 4.37501 1.78309 4.37501 2.18744C4.37501 2.58849 4.27557 2.95473 4.07671 3.28617C3.88116 3.61761 3.61767 3.88276 3.28623 4.08162C2.9581 4.27717 2.59186 4.37494 2.18751 4.37494Z"
+													fill="#393C40" />
+											</svg>
+										</li>
 										<li> editado há 12 minutos</li>
 									</ul>
 								</div>
@@ -131,9 +200,12 @@
 						<div class="artigos-busca">
 							<input type="text" placeholder="Pesquise por artigo ou tema">
 							<button class="botao-busca">
-								<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M17 17L12.4286 12.4285M13.9524 7.47623C13.9524 11.053 11.0529 13.9525 7.47618 13.9525C3.89949 13.9525 1 11.053 1 7.47623C1 3.89951 3.89949 1 7.47618 1C11.0529 1 13.9524 3.89951 13.9524 7.47623Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
-</svg>
+								<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M17 17L12.4286 12.4285M13.9524 7.47623C13.9524 11.053 11.0529 13.9525 7.47618 13.9525C3.89949 13.9525 1 11.053 1 7.47623C1 3.89951 3.89949 1 7.47618 1C11.0529 1 13.9524 3.89951 13.9524 7.47623Z"
+										stroke="white" stroke-width="2" stroke-linejoin="round" />
+								</svg>
 
 							</button>
 						</div>
@@ -143,7 +215,7 @@
 						<div class="card-artigo">
 							<img src="assets/image copy 5.png" alt="Pessoa usando óculos VR">
 							<div class="card-conteudo">
-								<span>Tecnologia</span>
+								<span class="span">Tecnologia</span>
 								<p>Você fica inseguro(a) na hora de escrever?</p>
 								<div class="card-rodape">
 									<span>16, Fev</span>
@@ -154,7 +226,7 @@
 						<div class="card-artigo">
 							<img src="assets/image copy 4.png" alt="Laptop e café">
 							<div class="card-conteudo">
-								<span>Tecnologia</span>
+								<span class="span">Tecnologia</span>
 								<p>Você fica inseguro(a) na hora de escrever?</p>
 								<div class="card-rodape">
 									<span>16, Fev</span>
@@ -165,7 +237,7 @@
 						<div class="card-artigo">
 							<img src="assets/image copy 5.png" alt="Código em tela de computador">
 							<div class="card-conteudo">
-								<span>Tecnologia</span>
+								<span class="span">Tecnologia</span>
 								<p>React Native Weekend - 21' na minha visão</p>
 								<div class="card-rodape">
 									<span>16, Fev</span>
@@ -176,7 +248,7 @@
 						<div class="card-artigo">
 							<img src="assets/image copy 6.png" alt="Código em tela de computador">
 							<div class="card-conteudo">
-								<span>Tecnologia</span>
+								<span class="span">Tecnologia</span>
 								<p>React Native Weekend - 21' na minha visão</p>
 								<div class="card-rodape">
 									<span>16, Fev</span>
@@ -187,7 +259,7 @@
 						<div class="card-artigo">
 							<img src="assets/image copy 2.png" alt="Código em tela de computador">
 							<div class="card-conteudo">
-								<span>Tecnologia</span>
+								<span class="span">Tecnologia</span>
 								<p>React Native Weekend - 21' na minha visão</p>
 								<div class="card-rodape">
 									<span>16, Fev</span>
@@ -198,7 +270,7 @@
 						<div class="card-artigo">
 							<img src="assets/image copy 4.png" alt="Código em tela de computador">
 							<div class="card-conteudo">
-								<span>Tecnologia</span>
+								<span class="span">Tecnologia</span>
 								<p>React Native Weekend - 21' na minha visão</p>
 								<div class="card-rodape">
 									<span>16, Fev</span>
@@ -222,15 +294,58 @@
 			<div class="footer-col footer-menu">
 				<h4>Menu</h4>
 				<ul>
-					<li><a href="#">Tecnologia</a></li>
-					<li><a href="#">React JS</a></li>
-					<li><a href="#">HTML & CSS</a></li>
+					<li><a href="#" class="link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M9 8.00008H11" stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path d="M5 6.33325L7 7.99992L5 9.66659" stroke="#FFDA34" stroke-width="1.25"
+									stroke-linecap="round" stroke-linejoin="round" />
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M12 14H4C2.89533 14 2 13.1047 2 12V4C2 2.89533 2.89533 2 4 2H12C13.1047 2 14 2.89533 14 4V12C14 13.1047 13.1047 14 12 14Z"
+									stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							Tecnologia</a></li>
+					<li><a href="#" class="link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M5.33322 2.66668C8.27871 4.13942 11.8604 7.72112 13.3332 10.6666C14.8059 13.6121 13.612 14.806 10.6665 13.3333C7.72103 11.8605 4.13932 8.27881 2.66658 5.33332C1.19383 2.38783 2.38773 1.19393 5.33322 2.66668"
+									stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M10.6665 2.66674C13.612 1.194 14.8059 2.38789 13.3332 5.33338C11.8604 8.27887 8.27871 11.8606 5.33322 13.3333C2.38772 14.8061 1.19383 13.6122 2.66658 10.6667C4.13932 7.72119 7.72102 4.13949 10.6665 2.66674"
+									stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round"
+									stroke-linejoin="round" />
+								<path
+									d="M8.24135 8.00008C8.24135 8.13808 8.13335 8.25008 8.00002 8.25008C7.86669 8.25008 7.75869 8.13808 7.75869 8.00008C7.75869 7.86208 7.86669 7.75008 8.00002 7.75008C8.13335 7.75008 8.24135 7.86208 8.24135 8.00008"
+									stroke="#9995A6" stroke-width="1.25" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+							React JS</a></li>
+					<li><a href="#" class="link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.99917 9.33404L4.66528 8.00015L5.99917 6.66626" stroke="#FFDA34"
+									stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M10.0009 6.66626L11.3347 8.00015L10.0009 9.33404" stroke="#FFDA34"
+									stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+								<rect x="1.9975" y="1.99756" width="12.005" height="12.005" stroke="#FFDA34"
+									stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M8.51756 5.99927L7.40576 10.0009" stroke="#FFDA34" stroke-width="1.25"
+									stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+
+							HTML & CSS</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<a href="#top" class="back-to-top" aria-label="Voltar ao topo">
-			<span class="arrow-up"></span>
+			<span><svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M3.78047 12.6684V6.86447V1.06055M3.78047 1.06055L7.03067 4.31074M3.78047 1.06055L0.530273 4.31074"
+						stroke="white" stroke-width="1.5" />
+				</svg>
+			</span>
 		</a>
 	</footer>
 </body>
