@@ -42,4 +42,80 @@ nav ul li a svg {
   position: relative;
   top: 3px;
   right: 6px;
+}/* BOTÃO HAMBURGUER */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background: #ffc934;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* MENU MOBILE */
+@media (max-width: 768px) {
+
+  /* mostra o botão */
+  .menu-btn {
+    display: flex;
+  }
+
+  /* configura nav como menu lateral */
+  header nav {
+    position: fixed;
+    top: 0;
+    right: -80%;        /* fora da tela */
+    width: 80%;         /* lado direito, quase 100% */
+    height: 25vh;
+    background: rgba(0,0,0,0.95);
+    padding-top: 80px;
+    transition: 0.3s ease;
+  
+  }
+
+  /* quando ativo → entra */
+  header nav.active {
+    right: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 25px;
+    padding: 0;
+    align-items: flex-start;
+    padding-left: 30px;
+  }
+
+  nav ul li {
+    padding: 0;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  /* animação do X */
+  .menu-btn.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-btn.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-btn.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
 }
