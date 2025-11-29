@@ -12,6 +12,30 @@
       ],
       "updatedAt": "2025-11-28T13:22:09.951Z",
       "id": "2"
+    }, {
+      "author": "Fernanda Lima",
+      "title": "A ascensão dos Headless CMS no desenvolvimento moderno",
+      "category": "Tecnologia",
+      "image": "https://static.vecteezy.com/ti/fotos-gratis/t2/42730459-leao-perigo-animal-animais-selvagens-natureza-floresta-foto.jpg",
+      "content": [
+        "Headless CMS permitem separar completamente frontend e backend, oferecendo liberdade total para desenvolvedores.",
+        "Com APIs flexíveis, essas ferramentas trazem mais escalabilidade e performance.",
+        "A tendência é que se tornem padrão em projetos complexos."
+      ],
+      "updatedAt": "2025-11-28T13:22:09.951Z",
+      "id": "2"
+    }, {
+      "author": "Fernanda Lima",
+      "title": "A ascensão dos Headless CMS no desenvolvimento moderno",
+      "category": "Tecnologia",
+      "image": "https://static.vecteezy.com/ti/fotos-gratis/t2/42730459-leao-perigo-animal-animais-selvagens-natureza-floresta-foto.jpg",
+      "content": [
+        "Headless CMS permitem separar completamente frontend e backend, oferecendo liberdade total para desenvolvedores.",
+        "Com APIs flexíveis, essas ferramentas trazem mais escalabilidade e performance.",
+        "A tendência é que se tornem padrão em projetos complexos."
+      ],
+      "updatedAt": "2025-11-28T13:22:09.951Z",
+      "id": "2"
     },
     {
       "id": "5",
@@ -56,18 +80,6 @@
       ],
       "createdAt": "2025-11-28T13:25:55.087Z",
       "updatedAt": "2025-11-28T13:25:55.087Z"
-    },
-    {
-      "id": "3454",
-      "author": "x",
-      "title": "xxxxxx",
-      "category": "xxx",
-      "image": "xxxxx",
-      "content": [
-        "xxxxxxxxxxxxxxx"
-      ],
-      "createdAt": "2025-11-28T13:26:51.382Z",
-      "updatedAt": "2025-11-28T13:26:51.382Z"
     }
   ],
   "categories": [
