@@ -23,6 +23,11 @@
   min-width: 250px; /* 🔥 não deixa quebrar feio */
 }
 
+.menu-title {
+  position: relative;
+  left: 15px;
+}
+
 .footer-menu {
   margin-left: 300px;
   flex-basis: 20%;
@@ -93,3 +98,40 @@
   transition: background-color 0.3s;
 }
 
+@media (max-width: 1324px) {
+  .main-footer {
+    position: relative;
+    top: 2300px;
+    bottom: 0;
+  }
+
+  @media (max-width: 1020px) {
+    .main-footer {
+      position: relative;
+      top: 2600px;
+      bottom: 0;
+    }
+    .footer-menu{
+      display: none;
+    }
+  } @media (max-width: 950px) {
+    .main-footer {
+      position: relative;
+      top: 2800px;
+      bottom: 0;
+    }
+  } @media (max-width: 785px) {
+    .main-footer {
+      position: relative;
+      top: 3750px;
+      bottom: 0;
+    }
+  }
+  @media (max-width: 470px) {
+    .main-footer {
+      position: relative;
+      top: 3550px;
+      bottom: 0;
+    }
+  }
+}

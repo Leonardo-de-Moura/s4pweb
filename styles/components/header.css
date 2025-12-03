@@ -42,7 +42,8 @@ nav ul li a svg {
   position: relative;
   top: 3px;
   right: 6px;
-}/* BOTÃO HAMBURGUER */
+}
+
 .menu-btn {
   display: none;
   flex-direction: column;
@@ -64,7 +65,7 @@ nav ul li a svg {
 }
 
 /* MENU MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 760px) {
 
   /* mostra o botão */
   .menu-btn {
@@ -75,10 +76,10 @@ nav ul li a svg {
   header nav {
     position: fixed;
     top: 0;
-    right: -80%;        /* fora da tela */
-    width: 80%;         /* lado direito, quase 100% */
-    height: 25vh;
-    background: rgba(0,0,0,0.95);
+    right: -100%;        /* fora da tela */
+    width: 100%;         /* lado direito, quase 100% */
+    height: 100vh;
+    background: var(--color-purple);
     padding-top: 80px;
     transition: 0.3s ease;
   

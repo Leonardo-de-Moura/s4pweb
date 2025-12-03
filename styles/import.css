@@ -24,23 +24,3 @@
   --color-text-description: #C4C4C4;
 }
 
-/* Necessário para que o footer vá para o fim da página */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Garanta que o conteúdo empurre o footer para baixo */
-main {
-  flex: 1;
-}
-
-
-

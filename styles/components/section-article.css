@@ -120,6 +120,8 @@
 
 @media (max-width: 1024px) {
   .artigos-grid {
+    position: relative;
+    bottom: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
 

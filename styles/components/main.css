@@ -88,6 +88,7 @@
 }
 .popular-title {
   margin-top: 40px;
+  margin-right: 330px;
   margin-bottom: 5px;
   font: var(--font-1);
 }
@@ -137,133 +138,46 @@
    =========================== */
 @media (max-width: 1324px) {
   .main {
-    width: 100%;
+    display: flex;
+    top: 500px;
+  }
+  .section-destaque {
     display: flex;
     flex-direction: column;
-    top: 680px; /* mantém a distância do header, mas sem quebrar o layout */
+    width: 100%;
   }
-
-  .section-destaque {
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-  }
-
   .destaque {
-    width: 90%;
-    padding-left: 0;
-    height: auto;
-  }
-
-  .popular {
-    width: 90%;
-    height: 740px;
-    font-size: 1.5em;
-   
-  }
-
-  .artigo {
     width: 100%;
-    justify-content: left;
-    align-items: center;
+    position: relative;
+    right: 10px;
   }
-  .artigo img {
-    margin-bottom: 60px;
-    width: 250px;
-    height: 200px;
-    padding-right: 35px;
-  }
-  .artigo2, img{
-    margin-top: 45px;
-  }
-}
-
-/* ===========================
-   RESPONSIVIDADE – até 768px
-   =========================== */
-@media (max-width: 768px) {
   .info {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    width: 1000px;
+  }
+  .destaque img {
+    width: 1000px;
   }
 
-  .info ul {
-    padding-left: 0;
-  }
-
-  .artigos {
-    width: 100%;
-  }
-
-  .artigo {
-    width: 100%;
-    padding-bottom: 10px;
-    gap: 10px;
-  }
-
-  .artigo img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .artigo2 {
+  h4 {
     text-align: left;
-    margin-right: 0;
+    width: 250px;
+    padding: 10px;
   }
+  .artigo {
+    margin-right: 100px;
 
-  .artigo2 span {
-    margin-top: 5px;
-    margin-bottom: 10px;
+    justify-content: space-around;
   }
-
-  .artigo2 ul {
-    justify-content: flex-start;
-    gap: 10px;
+  .artigo2 {
+    position: relative;
   }
 }
 
-/* ===========================
-   RESPONSIVIDADE – até 480px
-   =========================== */
-@media (max-width: 480px) {
-  .span {
-    font-size: 0.9rem;
-  }
-
-  .destaque h2 {
-    font-size: 1.4rem;
-    text-align: center;
-  }
-
-  .destaque .text {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .popular-title {
-    font-size: 1.2rem;
-  }
-
-  .artigo {
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 15px;
-    text-align: center;
-  }
-
-  .artigo img {
-    margin-bottom: 10px;
-  }
-
-  .artigo2 {
-    height: auto;
-    align-items: center;
-  }
-
-  .artigo2 ul {
-    flex-direction: column;
-    gap: 5px;
+@media (max-width: 600px) {
+  .artigo,
+  h4 {
+    margin: auto;
+    position: relative;
+    top: -200px;
   }
 }
