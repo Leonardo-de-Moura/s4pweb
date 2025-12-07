@@ -71,7 +71,6 @@ nav ul li a svg {
   .menu-btn {
     display: flex;
   }
-
   /* configura nav como menu lateral */
   header nav {
     position: fixed;

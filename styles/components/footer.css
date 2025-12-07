@@ -101,14 +101,15 @@
 @media (max-width: 1324px) {
   .main-footer {
     position: relative;
-    top: 2300px;
+    top: 1600px;
     bottom: 0;
+    margin-top: 10px;
   }
 
-  @media (max-width: 1020px) {
+  @media (max-width: 1024px) {
     .main-footer {
       position: relative;
-      top: 2600px;
+      top: 1900px;
       bottom: 0;
     }
     .footer-menu{
@@ -117,20 +118,35 @@
   } @media (max-width: 950px) {
     .main-footer {
       position: relative;
-      top: 2800px;
+      top: 1900px;
       bottom: 0;
+      margin-top: 10px;
     }
-  } @media (max-width: 785px) {
+  } @media (max-width: 784px) {
     .main-footer {
       position: relative;
-      top: 3750px;
+      top: 1950px;
       bottom: 0;
     }
   }
-  @media (max-width: 470px) {
+  @media (max-width: 768px) {
     .main-footer {
       position: relative;
-      top: 3550px;
+      top: 2850px;
+      bottom: 0;
+    }
+  }
+  @media (max-width: 480px) {
+    .main-footer {
+      position: relative;
+      top: 2670px;
+      bottom: 0;
+    }
+  }
+  @media (max-width: 420px) {
+    .main-footer {
+      position: relative;
+      top: 2770px;
       bottom: 0;
     }
   }

@@ -133,11 +133,34 @@
   margin-right: 80px;
 }
 
-/* ===========================
-   RESPONSIVIDADE – até 1024px
-   =========================== */
-@media (max-width: 1324px) {
+@media (max-width: 1330px) {
   .main {
+    display: flex;
+    top: 700px;
+  }
+  .section-destaque {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .destaque {
+    width: 100%;
+    position: relative;
+    right: 10px;
+  }
+  .info {
+    width: 1000px;
+  }
+  .destaque img {
+    width: 1000px;
+  }
+.popular{
+  display: none;
+  position: absolute;
+}
+}
+@media (max-width:950px){
+    .main {
     display: flex;
     top: 500px;
   }
@@ -156,28 +179,11 @@
   }
   .destaque img {
     width: 1000px;
+    
   }
-
-  h4 {
-    text-align: left;
-    width: 250px;
-    padding: 10px;
-  }
-  .artigo {
-    margin-right: 100px;
-
-    justify-content: space-around;
-  }
-  .artigo2 {
-    position: relative;
-  }
+  
 }
-
 @media (max-width: 600px) {
-  .artigo,
-  h4 {
-    margin: auto;
-    position: relative;
-    top: -200px;
-  }
+  
+ 
 }

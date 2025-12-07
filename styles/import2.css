@@ -10,3 +10,15 @@
 	box-sizing: border-box;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+:root {
+  --color-purple: #7063f0;
+  --color-white: #fff;
+  --color-yellow: #ffc934;
+  --color-gradient: linear-gradient(135deg, #ffda34, #916a00);
+  --font-1: 700 24px/150% "Roboto";
+  --font-2:  14px/150% "Inter";
+  --color-black: #1C162E;
+  --color-text-description: #C4C4C4;
+}
+
