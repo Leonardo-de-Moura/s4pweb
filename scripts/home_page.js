@@ -4,7 +4,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector("nav");
 
 btn_explorar.addEventListener("click", () => {
-	window.location.href = "index2.html"
+	window.location.href = "index3.html"
 })
 btn_mais.addEventListener("click", () => {
 	btn_mais.addEventListener("click", () => {
