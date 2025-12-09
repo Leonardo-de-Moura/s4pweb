@@ -35,3 +35,4 @@ document.addEventListener("click", (e) => {
     div2.style.display = "";
   }
 });
+ 

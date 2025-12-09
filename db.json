@@ -1,123 +1,148 @@
 {
   "posts": [
     {
-      "id": "d42e",
-      "author": "ffffff",
-      "title": "fffffffffff",
-      "category": "fffffffffff",
-      "image": "ffffffffff",
+      "author": "Laura Mendes",
+      "title": "Os 5 Melhores Frameworks JavaScript em 2025",
+      "category": "JavaScript",
+      "image": "https://imgs.search.brave.com/etyBqXCyKJ4-guOneDJPniBAKILkbGshhyD6sIkCnpE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvNjAw/MjMvYmFib29ucy1t/b25rZXktbWFtbWFs/LWZyZWV6ZS02MDAy/My5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA",
       "content": [
-        "ffffffffffffff"
+        "O ecossistema JavaScript evolui rapidamente, e em 2025, alguns frameworks se destacam por sua performance e facilidade de uso.",
+        "<h2>1. React e Next.js</h2>",
+        "A dupla continua dominando o desenvolvimento frontend, focando em renderização no servidor (SSR) para SEO e velocidade.",
+        "<h2>2. Vue.js e Nuxt</h2>",
+        "Uma alternativa robusta, amada pela comunidade por sua sintaxe limpa e integração fácil.",
+        "<h2>3. Svelte</h2>",
+        "Svelte se mantém forte por compilar o código em JavaScript puro, resultando em builds muito leves e rápidos.",
+        "A escolha ideal depende do tamanho do projeto e da experiência da equipe."
       ],
-      "createdAt": "2025-11-28T13:24:18.790Z",
-      "updatedAt": "2025-11-28T13:24:18.790Z"
-    },
-    {
-      "id": "d9f4",
-      "author": "ddddd",
-      "title": "ddddddd",
-      "category": "dddddddd",
-      "image": "ddddddd",
-      "content": [
-        "dddddddd"
-      ],
-      "createdAt": "2025-11-28T13:25:55.087Z",
-      "updatedAt": "2025-11-28T13:25:55.087Z"
-    },
-    {
-      "id": "15bc",
-      "author": "vfdvfdvfdv",
-      "title": "dfffffffff",
-      "category": "dffffffffff",
-      "image": "dfffffffffffffff",
-      "content": [
-        "fdffffffffffff"
-      ],
-      "createdAt": "2025-12-08T17:09:47.797Z",
-      "updatedAt": "2025-12-08T17:09:47.797Z"
-    },
-    {
-      "id": "9ac8",
-      "author": "ddddddddddd",
-      "title": "dddddddddddddddddddd",
-      "category": "dddddddddddddddddd",
-      "image": "https://imgs.search.brave.com/H3mhPCSwTq2ktDNJWXJGDGihQkluFr8I-5wizadi4Y8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA4/ODg1MzU4Mi92ZWN0/b3Ivd2lyZWZyYW1l/LWxldHRlci1tLW91/dGxpbmUtYmV2ZWxs/ZWQtM2QtYWxwaGFi/ZXQtZGVzaWduLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1u/VXNrci1JeVI0d3Vk/dWVrYm9BMktTU3dp/bWdmVjI4a1RIXzZP/M1hUdzZnPQ",
-      "content": [
-        "dddddddddddddddd"
-      ],
-      "createdAt": "2025-12-08T17:11:47.690Z",
-      "updatedAt": "2025-12-08T17:11:47.690Z"
-    },
-    {
-      "id": "b4e2",
-      "author": "sssssss",
-      "title": "sssssssssssssssssss",
-      "category": "ssssssssssssssssssss",
-      "image": "https://imgs.search.brave.com/H3mhPCSwTq2ktDNJWXJGDGihQkluFr8I-5wizadi4Y8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA4/ODg1MzU4Mi92ZWN0/b3Ivd2lyZWZyYW1l/LWxldHRlci1tLW91/dGxpbmUtYmV2ZWxs/ZWQtM2QtYWxwaGFi/ZXQtZGVzaWduLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1u/VXNrci1JeVI0d3Vk/dWVrYm9BMktTU3dp/bWdmVjI4a1RIXzZP/M1hUdzZnPQ",
-      "content": [
-        "ss"
-      ],
-      "createdAt": "2025-12-08T17:12:09.225Z",
-      "updatedAt": "2025-12-08T17:12:09.225Z"
-    },
-    {
-      "id": "aa98",
-      "author": "sssssss",
-      "title": "sssssssssssssssssssssssss",
-      "category": "sssssssssssssssssssss",
-      "image": "import { getAll, remove } from \"./api.js\";  const grid = document.querySelector(\".artigos-grid\");  async function renderizarCards() {     const data = await getAll();     console.log(data);      let cardsHTML = \"\";      data.forEach((item) => {         // formata a data para dd/mes abreviado         const dataCriacao = new Date(item.createdAt);         const dia = dataCriacao.getDate().toString().padStart(2, \"0\");         const mes = dataCriacao.toLocaleString(\"pt-BR\", { month: \"short\" }); // mês abreviado         const dataFormatada = `${dia} ${mes}`; // ex: 03 jun          cardsHTML += `<div class=\"card-artigo\">             <img src=\"${item.image}\" alt=\"Código em tela de computador\">             <div class=\"card-conteudo\">                                <p>${item.title}</p>                 <div class=\"card-rodape\">                     <span>${dataFormatada}</span>                     <span>${item.author}</span>                     <div class=\"botoes\">                         <button class=\"btn-excluir\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M17.5 18.3333H2.5C2.15833 18.3333 1.875 18.05 1.875 17.7083C1.875 17.3666 2.15833 17.0833 2.5 17.0833H17.5C17.8417 17.0833 18.125 17.3666 18.125 17.7083C18.125 18.05 17.8417 18.3333 17.5 18.3333Z\" fill=\"white\"/> <path d=\"M15.85 2.89999C14.2333 1.28332 12.65 1.24166 10.9916 2.89999L9.98331 3.90832C9.89998 3.99166 9.86665 4.12499 9.89998 4.24166C10.5333 6.44999 12.3 8.21666 14.5083 8.84999C14.5416 8.85832 14.575 8.86666 14.6083 8.86666C14.7 8.86666 14.7833 8.83332 14.85 8.76666L15.85 7.75832C16.675 6.94166 17.075 6.14999 17.075 5.34999C17.0833 4.52499 16.6833 3.72499 15.85 2.89999Z\" fill=\"white\"/> <path d=\"M13.0079 9.60829C12.7663 9.49163 12.5329 9.37496 12.3079 9.24163C12.1246 9.13329 11.9496 9.01663 11.7746 8.89163C11.6329 8.79996 11.4663 8.66663 11.3079 8.53329C11.2913 8.52496 11.2329 8.47496 11.1663 8.40829C10.8913 8.17496 10.5829 7.87496 10.3079 7.54163C10.2829 7.52496 10.2413 7.46663 10.1829 7.39163C10.0996 7.29163 9.95795 7.12496 9.83295 6.93329C9.73295 6.80829 9.61628 6.62496 9.50795 6.44163C9.37461 6.21663 9.25795 5.99163 9.14128 5.75829C8.98832 5.43051 8.5581 5.33314 8.30233 5.58891L3.61628 10.275C3.50795 10.3833 3.40795 10.5916 3.38295 10.7333L2.93295 13.925C2.84961 14.4916 3.00795 15.025 3.35795 15.3833C3.65795 15.675 4.07461 15.8333 4.52461 15.8333C4.62461 15.8333 4.72461 15.825 4.82461 15.8083L8.02461 15.3583C8.17461 15.3333 8.38295 15.2333 8.48295 15.125L13.1767 10.4312C13.4274 10.1805 13.3332 9.74924 13.0079 9.60829Z\" fill=\"white\"/> </svg>  Excluir</button>                         <button class=\"btn-editar\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 20 20\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M17.5 18.3333H2.5C2.15833 18.3333 1.875 18.05 1.875 17.7083C1.875 17.3666 2.15833 17.0833 2.5 17.0833H17.5C17.8417 17.0833 18.125 17.3666 18.125 17.7083C18.125 18.05 17.8417 18.3333 17.5 18.3333Z\" fill=\"white\"/> <path d=\"M15.85 2.89999C14.2333 1.28332 12.65 1.24166 10.9916 2.89999L9.98331 3.90832C9.89998 3.99166 9.86665 4.12499 9.89998 4.24166C10.5333 6.44999 12.3 8.21666 14.5083 8.84999C14.5416 8.85832 14.575 8.86666 14.6083 8.86666C14.7 8.86666 14.7833 8.83332 14.85 8.76666L15.85 7.75832C16.675 6.94166 17.075 6.14999 17.075 5.34999C17.0833 4.52499 16.6833 3.72499 15.85 2.89999Z\" fill=\"white\"/> <path d=\"M13.0079 9.60829C12.7663 9.49163 12.5329 9.37496 12.3079 9.24163C12.1246 9.13329 11.9496 9.01663 11.7746 8.89163C11.6329 8.79996 11.4663 8.66663 11.3079 8.53329C11.2913 8.52496 11.2329 8.47496 11.1663 8.40829C10.8913 8.17496 10.5829 7.87496 10.3079 7.54163C10.2829 7.52496 10.2413 7.46663 10.1829 7.39163C10.0996 7.29163 9.95795 7.12496 9.83295 6.93329C9.73295 6.80829 9.61628 6.62496 9.50795 6.44163C9.37461 6.21663 9.25795 5.99163 9.14128 5.75829C8.98832 5.43051 8.5581 5.33314 8.30233 5.58891L3.61628 10.275C3.50795 10.3833 3.40795 10.5916 3.38295 10.7333L2.93295 13.925C2.84961 14.4916 3.00795 15.025 3.35795 15.3833C3.65795 15.675 4.07461 15.8333 4.52461 15.8333C4.62461 15.8333 4.72461 15.825 4.82461 15.8083L8.02461 15.3583C8.17461 15.3333 8.38295 15.2333 8.48295 15.125L13.1767 10.4312C13.4274 10.1805 13.3332 9.74924 13.0079 9.60829Z\" fill=\"white\"/> </svg>  Editar</button>                     </div>                 </div>             </div>         </div>`;     });      grid.innerHTML = cardsHTML; }  renderizarCards();",
-      "content": [
-        "sssssssss"
-      ],
-      "createdAt": "2025-12-08T17:14:04.777Z",
-      "updatedAt": "2025-12-08T17:14:04.777Z"
-    }
-  ],
-  "categories": [
-    {
-      "id": "1",
-      "name": "Frontend"
-    },
-    {
-      "id": "2",
-      "name": "Backend"
+      "updatedAt": "2025-12-08T20:54:49.130Z",
+      "id": "1"
     },
     {
       "id": "3",
-      "name": "Programação"
+      "title": "Introdução ao TypeScript: O Superconjunto do JavaScript",
+      "category": "TypeScript",
+      "author": "Alice Santos",
+      "createdAt": "2025-11-05",
+      "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "content": [
+        "TypeScript (TS) adiciona tipagem estática ao JavaScript, o que ajuda a encontrar erros durante a compilação, e não em produção.",
+        "<h2>Benefícios Chave</h2>",
+        "1. **Segurança:** O código é mais seguro e previsível.",
+        "2. **Refatoração:** Facilita a modificação de grandes bases de código.",
+        "3. **Produtividade:** Melhor autocompletar e sugestões de código em IDEs.",
+        "Migrar para TS pode ser um desafio inicial, mas os benefícios em projetos de médio e grande porte são inegáveis."
+      ]
     },
     {
       "id": "4",
-      "name": "Produtividade"
+      "title": "O que é Design System e Por que Sua Equipe Precisa de Um",
+      "category": "Design",
+      "author": "Thiago Souza",
+      "createdAt": "2025-11-10",
+      "image": "https://images.unsplash.com/photo-1534670054817-f2038753235b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "content": [
+        "Um Design System é um conjunto de padrões, princípios e ferramentas para garantir a consistência e a escala do seu produto digital.",
+        "<h2>Componentes Essenciais</h2>",
+        "Inclui a biblioteca de componentes (botões, cards), a documentação de uso e os princípios de design.",
+        "A adoção de um Design System acelera o desenvolvimento, reduz a dívida técnica e melhora a experiência do usuário."
+      ]
     },
     {
       "id": "5",
-      "name": "Tecnologia"
+      "title": "A Ascensão do Serverless no Desenvolvimento Web",
+      "category": "Tecnologia",
+      "author": "Laura Mendes",
+      "createdAt": "2025-11-22",
+      "image": "https://images.unsplash.com/photo-1580133276851-f2d1e2e4b4d6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "content": [
+        "Serverless, ou 'Funções como Serviço' (FaaS), permite que os desenvolvedores criem e executem aplicações sem gerenciar a infraestrutura do servidor.",
+        "<h2>Vantagens</h2>",
+        "1. **Custo:** Pague apenas pelo tempo de execução do código.",
+        "2. **Escalabilidade:** Escala automaticamente conforme a demanda.",
+        "3. **Foco:** Permite que a equipe se concentre apenas na lógica de negócios.",
+        "É ideal para APIs de back-end leves, processamento de dados e tarefas assíncronas."
+      ]
     },
     {
       "id": "6",
-      "name": "Arquitetura"
+      "title": "React Hooks Essenciais: useState, useEffect e Mais",
+      "category": "React JS",
+      "author": "Marcos Ribeiro",
+      "createdAt": "2025-12-01",
+      "image": "https://images.unsplash.com/photo-1627398242478-f4ab02167812?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "content": [
+        "Os Hooks mudaram a maneira como escrevemos componentes React, permitindo o uso de estado e outros recursos sem escrever classes.",
+        "<h2>useState()</h2>",
+        "O Hook básico para adicionar estado a componentes funcionais.",
+        "<h2>useEffect()</h2>",
+        "Usado para efeitos colaterais, como buscar dados ou manipular o DOM. É a alternativa do React a ciclos de vida como `componentDidMount`.",
+        "Dominar os Hooks é o passo fundamental para o React moderno."
+      ]
     },
     {
-      "id": "7",
-      "name": "Design"
-    }
-  ],
-  "users": [
-    {
-      "id": "1",
-      "name": "Marcos Silva",
-      "email": "marcos@blog.com"
+      "author": "Alice Santo",
+      "title": "Otimização de Performance Web: Como Fazer Seu Site Voar",
+      "category": "Tecnologia",
+      "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "content": [
+        "A velocidade de carregamento de um site é crucial para SEO e experiência do usuário. Focar nas Core Web Vitals é essencial.",
+        "<h2>Dicas de Otimização</h2>",
+        "1. **Imagens:** Use formatos modernos (WebP) e carregamento lazy-loading.",
+        "2. **Minificação:** Comprima arquivos HTML, CSS e JavaScript.",
+        "3. **Cache:** Configure o cache do navegador e do servidor para recursos estáticos.",
+        "Um site rápido retém mais usuários e melhora as taxas de conversão."
+      ],
+      "updatedAt": "2025-12-09T02:10:42.692Z",
+      "id": "7"
     },
     {
-      "id": "2",
-      "name": "Ana Rodrigues",
-      "email": "ana@blog.com"
+      "author": "Thiago",
+      "title": "Variáveis CSS: Tornando seu Estilo Dinâmico",
+      "category": "HTML & CSS",
+      "image": "https://images.unsplash.com/photo-1510915228346-384e386c635b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "content": [
+        "As variáveis CSS (ou Custom Properties) permitem definir valores que podem ser reutilizados em toda a folha de estilo, facilitando a criação de temas e a manutenção.",
+        "<h2>Sintaxe</h2>",
+        "Variáveis são declaradas dentro de seletores (geralmente `:root`) usando `--nome-da-variavel`: `--cor-principal: #7063F0;`",
+        "Para usar, utilize a função `var()`: `background-color: var(--cor-principal);`",
+        "Elas são uma alternativa poderosa aos pré-processadores como Sass para muitas tarefas."
+      ],
+      "updatedAt": "2025-12-09T02:10:13.716Z",
+      "id": "8"
     },
     {
-      "id": "3",
-      "name": "Admin",
-      "email": "admin@blog.com"
+      "author": "Laura Mendes",
+      "title": "Acessibilidade Web (A11Y): or que É Importante e Como Começar",
+      "category": "Design",
+      "image": "https://images.unsplash.com/photo-1517430030504-2b7e1b1d7d8c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "content": [
+        "Acessibilidade Web (A11Y) garante que pessoas com deficiência possam perceber, entender, navegar e interagir com a web. É uma obrigação ética e, muitas vezes, legal.",
+        "<h2>Passos Iniciais</h2>",
+        "1. **Contraste:** Garanta que a cor do texto tenha contraste suficiente com o fundo.",
+        "2. **Alt Text:** Use texto alternativo descritivo em todas as imagens.",
+        "3. **Navegação por Teclado:** Certifique-se de que todos os elementos interativos possam ser acessados usando apenas o teclado.",
+        "Começar com pequenos ajustes já faz uma grande diferença."
+      ],
+      "updatedAt": "2025-12-09T02:10:01.548Z",
+      "id": "9"
+    },
+    {
+      "id": "10",
+      "title": "Versionamento de Código com Git: Guia para Iniciantes",
+      "category": "Tecnologia",
+      "author": "Marcos Ribeiro",
+      "createdAt": "2026-01-20",
+      "image": "https://images.unsplash.com/photo-1577909062366-0279f15d2a71?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "content": [
+        "Git é um sistema de controle de versão distribuído que permite rastrear alterações no código ao longo do tempo. É essencial para o trabalho em equipe.",
+        "<h2>Comandos Básicos</h2>",
+        "1. `git init`: Inicia um repositório.",
+        "2. `git add .`: Adiciona arquivos para o próximo commit.",
+        "3. `git commit -m \"mensagem\"`: Salva o estado atual do projeto.",
+        "4. `git push`: Envia as alterações para o repositório remoto (GitHub/GitLab).",
+        "Dominar o Git é um dos requisitos básicos para qualquer desenvolvedor."
+      ]
     }
   ]
 }
