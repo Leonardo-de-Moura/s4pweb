@@ -1,29 +1,9 @@
 {
   "posts": [
     {
-      "author": "Laura Mendes",
-      "title": "Os 5 Melhores Frameworks JavaScript em 2025",
-      "category": "JavaScript",
-      "image": "https://imgs.search.brave.com/etyBqXCyKJ4-guOneDJPniBAKILkbGshhyD6sIkCnpE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvNjAw/MjMvYmFib29ucy1t/b25rZXktbWFtbWFs/LWZyZWV6ZS02MDAy/My5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA",
-      "content": [
-        "O ecossistema JavaScript evolui rapidamente, e em 2025, alguns frameworks se destacam por sua performance e facilidade de uso.",
-        "<h2>1. React e Next.js</h2>",
-        "A dupla continua dominando o desenvolvimento frontend, focando em renderização no servidor (SSR) para SEO e velocidade.",
-        "<h2>2. Vue.js e Nuxt</h2>",
-        "Uma alternativa robusta, amada pela comunidade por sua sintaxe limpa e integração fácil.",
-        "<h2>3. Svelte</h2>",
-        "Svelte se mantém forte por compilar o código em JavaScript puro, resultando em builds muito leves e rápidos.",
-        "A escolha ideal depende do tamanho do projeto e da experiência da equipe."
-      ],
-      "updatedAt": "2025-12-08T20:54:49.130Z",
-      "id": "1"
-    },
-    {
-      "id": "3",
+      "author": "Alice Santos",
       "title": "Introdução ao TypeScript: O Superconjunto do JavaScript",
       "category": "TypeScript",
-      "author": "Alice Santos",
-      "createdAt": "2025-11-05",
       "image": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
       "content": [
         "TypeScript (TS) adiciona tipagem estática ao JavaScript, o que ajuda a encontrar erros durante a compilação, e não em produção.",
@@ -32,7 +12,9 @@
         "2. **Refatoração:** Facilita a modificação de grandes bases de código.",
         "3. **Produtividade:** Melhor autocompletar e sugestões de código em IDEs.",
         "Migrar para TS pode ser um desafio inicial, mas os benefícios em projetos de médio e grande porte são inegáveis."
-      ]
+      ],
+      "updatedAt": "2025-12-09T10:21:00.527Z",
+      "id": "3"
     },
     {
       "id": "4",
@@ -65,11 +47,9 @@
       ]
     },
     {
-      "id": "6",
-      "title": "React Hooks Essenciais: useState, useEffect e Mais",
-      "category": "React JS",
       "author": "Marcos Ribeiro",
-      "createdAt": "2025-12-01",
+      "title": "React Essenciais: useState, useEffect e Mais",
+      "category": "React JS",
       "image": "https://images.unsplash.com/photo-1627398242478-f4ab02167812?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
       "content": [
         "Os Hooks mudaram a maneira como escrevemos componentes React, permitindo o uso de estado e outros recursos sem escrever classes.",
@@ -78,7 +58,9 @@
         "<h2>useEffect()</h2>",
         "Usado para efeitos colaterais, como buscar dados ou manipular o DOM. É a alternativa do React a ciclos de vida como `componentDidMount`.",
         "Dominar os Hooks é o passo fundamental para o React moderno."
-      ]
+      ],
+      "updatedAt": "2025-12-09T10:19:28.895Z",
+      "id": "6"
     },
     {
       "author": "Alice Santo",
@@ -128,11 +110,9 @@
       "id": "9"
     },
     {
-      "id": "10",
+      "author": "Marcos Ribeir",
       "title": "Versionamento de Código com Git: Guia para Iniciantes",
       "category": "Tecnologia",
-      "author": "Marcos Ribeiro",
-      "createdAt": "2026-01-20",
       "image": "https://images.unsplash.com/photo-1577909062366-0279f15d2a71?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
       "content": [
         "Git é um sistema de controle de versão distribuído que permite rastrear alterações no código ao longo do tempo. É essencial para o trabalho em equipe.",
@@ -142,7 +122,21 @@
         "3. `git commit -m \"mensagem\"`: Salva o estado atual do projeto.",
         "4. `git push`: Envia as alterações para o repositório remoto (GitHub/GitLab).",
         "Dominar o Git é um dos requisitos básicos para qualquer desenvolvedor."
-      ]
+      ],
+      "updatedAt": "2025-12-09T10:05:27.941Z",
+      "id": "10"
+    },
+    {
+      "id": "8f97",
+      "author": "eee",
+      "title": "eeee",
+      "category": "eeeeeeeeeeee",
+      "image": "https://imgs.search.brave.com/pgx_ju2RsYqsytnPLK0e1hU0c142nFjNIl7KdGGkcLk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtcHJlbWl1/bS9kaXZlcnNvcy1h/bmltYWlzLWV4b3Rp/Y29zLWp1bnRvc181/Mzg3Ni0xMDczNjk0/LmpwZz9zZW10PWFp/c19pbmNvbWluZyZ3/PTc0MCZxPTgw",
+      "content": [
+        "blablablablabla"
+      ],
+      "createdAt": "2025-12-09T10:22:32.067Z",
+      "updatedAt": "2025-12-09T10:22:32.067Z"
     }
   ]
 }

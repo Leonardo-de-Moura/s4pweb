@@ -63,8 +63,8 @@ async function updatePost(id, postData) {
 
 async function deletePost(id) {
     try {
-        const response = await fetch(`${API_URL}/${id}`, { 
-            method: 'DELETE' 
+        const response = await fetch(`${API_URL}/${id}`, {
+            method: 'DELETE'
         })
         if (!response.ok) throw new Error('Erro ao deletar post')
         return true
@@ -94,7 +94,7 @@ function fecharModais() {
 // FUNÇÕES DE RENDERIZAÇÃO
 function criarCardElement(post) {
     const { dia, hora } = formatarData(post.createdAt)
-    
+
     const card = document.createElement("div")
     card.className = "card-artigo"
     card.dataset.id = post.id
@@ -118,8 +118,8 @@ function criarCardElement(post) {
         </div>
     `
 
-  
-    
+
+
     return card
 }
 
@@ -150,7 +150,7 @@ function renderizarPosts(posts) {
 function verificarMaisPosts() {
     const btnCarregarMais = document.querySelector('.botao-carregar-mais')
     if (!btnCarregarMais) return
-    
+
     if (postsExibidos < todosPosts.length) {
         btnCarregarMais.style.display = 'block'
     } else {
@@ -161,9 +161,9 @@ function verificarMaisPosts() {
 // FUNÇÕES DE PAGINAÇÃO
 async function carregarMaisPosts() {
     if (carregando) return
-    
+
     carregando = true
-    
+
     try {
         // Atualizar texto do botão
         const btnCarregarMais = document.querySelector('.botao-carregar-mais')
@@ -171,30 +171,30 @@ async function carregarMaisPosts() {
             btnCarregarMais.textContent = 'Carregando...'
             btnCarregarMais.disabled = true
         }
-        
+
         // Calcular quantos posts carregar
         const postsRestantes = todosPosts.length - postsExibidos
         const quantidade = Math.min(POSTS_POR_PAGINA, postsRestantes)
-        
+
         if (quantidade <= 0) {
             if (btnCarregarMais) btnCarregarMais.style.display = 'none'
             return
         }
-        
+
         // Pegar próximos posts
         const proximosPosts = todosPosts.slice(postsExibidos, postsExibidos + quantidade)
-        
+
         // Renderizar
         renderizarPosts(proximosPosts)
-        
+
         // Atualizar contador
         postsExibidos += quantidade
-        
+
     } catch (error) {
         console.error("Erro ao carregar mais posts:", error)
     } finally {
         carregando = false
-        
+
         // Restaurar botão
         const btnCarregarMais = document.querySelector('.botao-carregar-mais')
         if (btnCarregarMais) {
@@ -208,19 +208,19 @@ async function carregarTodosPosts() {
     try {
         // Resetar paginação
         postsExibidos = 0
-        
+
         // Buscar todos os posts
         todosPosts = await getPosts()
-        
+
         // Ordenar por data (mais recentes primeiro)
         todosPosts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
-        
+
         // Limpar grid
         if (grid) grid.innerHTML = ""
-        
+
         // Carregar primeira página
         await carregarMaisPosts()
-        
+
     } catch (error) {
         console.error("Erro ao carregar posts:", error)
     }
@@ -235,10 +235,10 @@ function abrirModalCriar() {
 async function abrirEditar(id) {
     try {
         idEditando = id
-        
+
         const response = await fetch(`${API_URL}/${id}`)
         if (!response.ok) throw new Error('Post não encontrado')
-        
+
         const post = await response.json()
         if (!post) return
 
@@ -247,7 +247,7 @@ async function abrirEditar(id) {
         editarInputs[1].value = post.title || ''
         editarInputs[2].value = post.category || ''
         editarInputs[3].value = post.image || ''
-        editarInputs[4].value = Array.isArray(post.content) ? 
+        editarInputs[4].value = Array.isArray(post.content) ?
             post.content.join('\n') : post.content || ''
 
         modalEditar.style.display = "block"
@@ -280,7 +280,7 @@ function configurarEventListeners() {
     const btnSalvarCriar = modalCriar?.querySelector("button")
     if (btnSalvarCriar) {
         btnSalvarCriar.addEventListener("click", async () => {
-            const [author, title, category, image, content] = 
+            const [author, title, category, image, content] =
                 [...criarInputs].map(i => i.value.trim())
 
             if (!title || !author) {
@@ -312,7 +312,7 @@ function configurarEventListeners() {
     const btnSalvarEditar = modalEditar?.querySelector("button")
     if (btnSalvarEditar) {
         btnSalvarEditar.addEventListener("click", async () => {
-            const [author, title, category, image, content] = 
+            const [author, title, category, image, content] =
                 [...editarInputs].map(i => i.value.trim())
 
             if (!title || !author) {
@@ -346,7 +346,7 @@ function configurarEventListeners() {
     if (btnExcluirConfirmar) {
         btnExcluirConfirmar.addEventListener("click", async () => {
             if (!idExcluindo) return
-            
+
             try {
                 await deletePost(idExcluindo)
                 fecharModais()
@@ -373,14 +373,14 @@ function configurarEventListeners() {
         if (event.key === 'Escape') fecharModais()
     })
 
-    
+
     document.addEventListener('click', (event) => {
         // Botão Editar
         if (event.target.classList.contains('btn-editar')) {
             const id = event.target.dataset.id
             if (id) abrirEditar(id)
         }
-        
+
         // Botão Excluir
         if (event.target.classList.contains('btn-excluir')) {
             const id = event.target.dataset.id
