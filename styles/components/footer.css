@@ -3,7 +3,7 @@
   color: var(--color-white);
   padding: 60px 20px;
   position: relative;
-  top: 1600px;
+  top: 2050px;
   bottom: 0;
   height: auto; /* 🔥 remove altura fixa (quebra no mobile) */
   z-index: 10;
@@ -101,52 +101,52 @@
 @media (max-width: 1324px) {
   .main-footer {
     position: relative;
-    top: 1600px;
+    top: 2100px;
     bottom: 0;
     margin-top: 10px;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1045px) {
     .main-footer {
       position: relative;
-      top: 1900px;
+      top: 2150px;
       bottom: 0;
     }
     .footer-menu{
       display: none;
     }
-  } @media (max-width: 950px) {
+  } @media (max-width: 1025px) {
     .main-footer {
       position: relative;
-      top: 1900px;
+      top: 2800px;
       bottom: 0;
       margin-top: 10px;
     }
-  } @media (max-width: 784px) {
+  } @media (max-width: 788px) {
     .main-footer {
       position: relative;
-      top: 1950px;
+      top: 2700px;
       bottom: 0;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     .main-footer {
       position: relative;
-      top: 2850px;
+      top: 4100px;
       bottom: 0;
     }
   }
   @media (max-width: 480px) {
     .main-footer {
       position: relative;
-      top: 2670px;
+      top: 4000px;
       bottom: 0;
     }
   }
   @media (max-width: 420px) {
     .main-footer {
       position: relative;
-      top: 2770px;
+      top: 3900px;
       bottom: 0;
     }
   }

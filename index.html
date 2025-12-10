@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>home</title>
 	<link rel="stylesheet" href="styles/import.css">
+
 	<script defer src="scripts/home_page.js"></script>
+	<script defer src="scripts/modals.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -19,7 +21,7 @@
 		rel="stylesheet">
 </head>
 
-<body>
+<body class="home">
 	<header class="header">
 		<h1 class="titulo"><span class="span">S4</span>blog</h1>
 		<button class="menu-btn">
@@ -353,6 +355,13 @@
 			</span>
 		</a>
 	</footer>
+	<div class="modal" id="modalVisualizar">
+    <div class="modal-conteudo">
+        <span class="fechar" onclick="fecharModais()">&times;</span>
+        <div id="artigo-visualizar-conteudo">
+            </div>
+    </div>
+</div>
 </body>
 
 </html>

@@ -8,10 +8,12 @@ const modalExcluir = document.getElementById("modalExcluir")
 const criarInputs = document.querySelectorAll('#modalCriar input, #modalCriar textarea')
 const editarInputs = document.querySelectorAll('#modalEditar input, #modalEditar textarea')
 
+
 // Variáveis de estado
 let idEditando = null
 let idExcluindo = null
 let todosPosts = []
+let postsAtivos = [] // posts atualmente usados como fonte (todos ou filtrados)
 let postsExibidos = 0
 const POSTS_POR_PAGINA = 6
 let carregando = false
@@ -151,7 +153,10 @@ function verificarMaisPosts() {
     const btnCarregarMais = document.querySelector('.botao-carregar-mais')
     if (!btnCarregarMais) return
 
-    if (postsExibidos < todosPosts.length) {
+    // usar a fonte ativa (filtrada ou completa)
+    const total = postsAtivos.length
+
+    if (postsExibidos < total) {
         btnCarregarMais.style.display = 'block'
     } else {
         btnCarregarMais.style.display = 'none'
@@ -172,8 +177,8 @@ async function carregarMaisPosts() {
             btnCarregarMais.disabled = true
         }
 
-        // Calcular quantos posts carregar
-        const postsRestantes = todosPosts.length - postsExibidos
+        // Calcular quantos posts carregar (usar fonte ativa)
+        const postsRestantes = postsAtivos.length - postsExibidos
         const quantidade = Math.min(POSTS_POR_PAGINA, postsRestantes)
 
         if (quantidade <= 0) {
@@ -181,8 +186,9 @@ async function carregarMaisPosts() {
             return
         }
 
-        // Pegar próximos posts
-        const proximosPosts = todosPosts.slice(postsExibidos, postsExibidos + quantidade)
+
+        // Pegar próximos posts da fonte ativa
+        const proximosPosts = postsAtivos.slice(postsExibidos, postsExibidos + quantidade)
 
         // Renderizar
         renderizarPosts(proximosPosts)
@@ -214,6 +220,9 @@ async function carregarTodosPosts() {
 
         // Ordenar por data (mais recentes primeiro)
         todosPosts.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+
+            // Definir fonte ativa inicial (sem filtro)
+            postsAtivos = todosPosts
 
         // Limpar grid
         if (grid) grid.innerHTML = ""
@@ -274,6 +283,33 @@ function configurarEventListeners() {
     const btnCarregarMais = document.querySelector('.botao-carregar-mais')
     if (btnCarregarMais) {
         btnCarregarMais.addEventListener('click', carregarMaisPosts)
+    }
+
+    // Campo de busca / filtragem (somente se existir na página atual)
+    const buscaInput = document.querySelector('.artigos-busca input')
+    if (buscaInput) {
+        buscaInput.addEventListener('input', async (event) => {
+            const q = event.target.value.trim().toLowerCase()
+
+            if (!q) {
+                // sem termo: usar todos os posts
+                postsAtivos = todosPosts
+            } else {
+                // filtrar por título, categoria, autor ou conteúdo
+                postsAtivos = todosPosts.filter(p => {
+                    const title = (p.title || '').toLowerCase()
+                    const category = (p.category || '').toLowerCase()
+                    const author = (p.author || '').toLowerCase()
+                    const content = (Array.isArray(p.content) ? p.content.join(' ') : (p.content || '')).toLowerCase()
+                    return title.includes(q) || category.includes(q) || author.includes(q) || content.includes(q)
+                })
+            }
+
+            // resetar paginação e re-renderizar a partir da fonte ativa
+            postsExibidos = 0
+            if (grid) grid.innerHTML = ''
+            await carregarMaisPosts()
+        })
     }
 
     // Modal Criar - Salvar
@@ -362,11 +398,18 @@ function configurarEventListeners() {
     }
 
     // Fechar modais ao clicar fora
-    window.addEventListener("click", (event) => {
-        if (event.target.classList.contains("modal")) {
-            fecharModais()
-        }
-    })
+    // Fechar modais ao clicar fora: adicionar listener em cada modal
+    const modais = document.querySelectorAll('.modal')
+    if (modais.length) {
+        modais.forEach(modal => {
+            modal.addEventListener('click', (event) => {
+                // fechar apenas quando o clique for diretamente na sobreposição (elemento modal)
+                if (event.target === modal) {
+                    fecharModais()
+                }
+            })
+        })
+    }
 
     // Fechar modais com ESC
     document.addEventListener('keydown', (event) => {

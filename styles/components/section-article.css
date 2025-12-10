@@ -176,3 +176,8 @@
     width: 100%;
   }
 }
+
+/* Esconder botões de editar/excluir para a página principal (index.html) */
+body.home .section-artigos .botoes {
+  display: none !important;
+}
