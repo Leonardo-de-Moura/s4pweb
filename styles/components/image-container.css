@@ -244,7 +244,7 @@ width: 100%;
 .share ul {
   display: flex;
   justify-content: space-between;
-  flex-direction: column; /* ícones ficam um embaixo do outro */
+  flex-direction: column; 
   gap: 12px;
   padding: 0;
   list-style: none;

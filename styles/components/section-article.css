@@ -143,7 +143,7 @@
   .artigos-cabecalho {
     flex-direction: column;
     gap: 20px;
-    align-items: flex-start; /* título fica à esquerda */
+    align-items: flex-start; /
   }
 
   .artigos-busca {
@@ -155,7 +155,7 @@
   }
 
   .artigos-grid {
-    grid-template-columns: 1fr; /* 1 coluna */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
@@ -177,7 +177,7 @@
   }
 }
 
-/* Esconder botões de editar/excluir para a página principal (index.html) */
+
 body.home .section-artigos .botoes {
   display: none !important;
 }

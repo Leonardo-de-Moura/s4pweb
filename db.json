@@ -17,26 +17,24 @@
       "id": "3"
     },
     {
-      "id": "4",
+      "author": "Thiago Souza",
       "title": "O que é Design System e Por que Sua Equipe Precisa de Um",
       "category": "Design",
-      "author": "Thiago Souza",
-      "createdAt": "2025-11-10",
-      "image": "https://images.unsplash.com/photo-1534670054817-f2038753235b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "image": "https://imgs.search.brave.com/4-sYHMy4bSomVvdL-j_cLubC-pXTe9icabM1MVNGP-4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9iYWph/ai5jb20uYnIvd3At/Y29udGVudC91cGxv/YWRzLzIwMjUvMDUv/QUJTX05TMTYwLndl/YnA",
       "content": [
         "Um Design System é um conjunto de padrões, princípios e ferramentas para garantir a consistência e a escala do seu produto digital.",
         "<h2>Componentes Essenciais</h2>",
         "Inclui a biblioteca de componentes (botões, cards), a documentação de uso e os princípios de design.",
         "A adoção de um Design System acelera o desenvolvimento, reduz a dívida técnica e melhora a experiência do usuário."
-      ]
+      ],
+      "updatedAt": "2025-12-10T10:25:38.026Z",
+      "id": "4"
     },
     {
-      "id": "5",
+      "author": "Laura Mendes",
       "title": "A Ascensão do Serverless no Desenvolvimento Web",
       "category": "Tecnologia",
-      "author": "Laura Mendes",
-      "createdAt": "2025-11-22",
-      "image": "https://images.unsplash.com/photo-1580133276851-f2d1e2e4b4d6?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "image": "https://imgs.search.brave.com/e7iTUnGmjgjSqyouv46zN3wvWKAo5ajAhkBLYGJVRU0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWdk/LmFlcGxjZG4uY29t/LzEwNTZ4NTk0L24v/Y3cvZWMvNTY4Mjcv/YmFqYWotcHVsc2Fy/LW5zLXJpZ2h0LXNp/ZGUtdmlldzQwLmpw/ZWc_d209MyZxPTgw",
       "content": [
         "Serverless, ou 'Funções como Serviço' (FaaS), permite que os desenvolvedores criem e executem aplicações sem gerenciar a infraestrutura do servidor.",
         "<h2>Vantagens</h2>",
@@ -44,13 +42,15 @@
         "2. **Escalabilidade:** Escala automaticamente conforme a demanda.",
         "3. **Foco:** Permite que a equipe se concentre apenas na lógica de negócios.",
         "É ideal para APIs de back-end leves, processamento de dados e tarefas assíncronas."
-      ]
+      ],
+      "updatedAt": "2025-12-10T10:24:59.287Z",
+      "id": "5"
     },
     {
       "author": "Marcos Ribeiro",
       "title": "React Essenciais: useState, useEffect e Mais",
       "category": "React JS",
-      "image": "https://images.unsplash.com/photo-1627398242478-f4ab02167812?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "image": "https://imgs.search.brave.com/4ZpftuDqAB3HhuaEs7-Z1vEu2aw0B9N_t8URpBni7K0/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9pbWdk/LmFlcGxjZG4uY29t/LzI3MngxNTMvbi9j/dy9lYy81ODAyNS9y/aWdodC1mcm9udC10/aHJlZS1xdWFydGVy/LmpwZWc_cT04MA",
       "content": [
         "Os Hooks mudaram a maneira como escrevemos componentes React, permitindo o uso de estado e outros recursos sem escrever classes.",
         "<h2>useState()</h2>",
@@ -59,7 +59,7 @@
         "Usado para efeitos colaterais, como buscar dados ou manipular o DOM. É a alternativa do React a ciclos de vida como `componentDidMount`.",
         "Dominar os Hooks é o passo fundamental para o React moderno."
       ],
-      "updatedAt": "2025-12-09T10:19:28.895Z",
+      "updatedAt": "2025-12-10T10:28:05.310Z",
       "id": "6"
     },
     {
@@ -82,7 +82,7 @@
       "author": "Thiago",
       "title": "Variáveis CSS: Tornando seu Estilo Dinâmico",
       "category": "HTML & CSS",
-      "image": "https://images.unsplash.com/photo-1510915228346-384e386c635b?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "image": "https://imgs.search.brave.com/9meGQ3Z1emrUP2O5EDCAY3pH5ArrotifS2FeLC4Q2Nc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWdk/LmFlcGxjZG4uY29t/LzM3MHgyMDgvbi9j/dy9lYy81ODAyNS9y/aWdodC1zaWRlLXZp/ZXcuanBlZz9xPTgw",
       "content": [
         "As variáveis CSS (ou Custom Properties) permitem definir valores que podem ser reutilizados em toda a folha de estilo, facilitando a criação de temas e a manutenção.",
         "<h2>Sintaxe</h2>",
@@ -90,14 +90,14 @@
         "Para usar, utilize a função `var()`: `background-color: var(--cor-principal);`",
         "Elas são uma alternativa poderosa aos pré-processadores como Sass para muitas tarefas."
       ],
-      "updatedAt": "2025-12-09T02:10:13.716Z",
+      "updatedAt": "2025-12-10T10:29:09.138Z",
       "id": "8"
     },
     {
       "author": "Laura Mendes",
       "title": "Acessibilidade Web (A11Y): or que É Importante e Como Começar",
       "category": "Design",
-      "image": "https://images.unsplash.com/photo-1517430030504-2b7e1b1d7d8c?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "image": "https://imgs.search.brave.com/9meGQ3Z1emrUP2O5EDCAY3pH5ArrotifS2FeLC4Q2Nc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWdk/LmFlcGxjZG4uY29t/LzM3MHgyMDgvbi9j/dy9lYy81ODAyNS9y/aWdodC1zaWRlLXZp/ZXcuanBlZz9xPTgw",
       "content": [
         "Acessibilidade Web (A11Y) garante que pessoas com deficiência possam perceber, entender, navegar e interagir com a web. É uma obrigação ética e, muitas vezes, legal.",
         "<h2>Passos Iniciais</h2>",
@@ -106,14 +106,14 @@
         "3. **Navegação por Teclado:** Certifique-se de que todos os elementos interativos possam ser acessados usando apenas o teclado.",
         "Começar com pequenos ajustes já faz uma grande diferença."
       ],
-      "updatedAt": "2025-12-09T02:10:01.548Z",
+      "updatedAt": "2025-12-10T10:29:31.406Z",
       "id": "9"
     },
     {
       "author": "Marcos Ribeir",
       "title": "Versionamento de Código com Git: Guia para Iniciantes",
       "category": "Tecnologia",
-      "image": "https://images.unsplash.com/photo-1577909062366-0279f15d2a71?q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max",
+      "image": "https://imgs.search.brave.com/9meGQ3Z1emrUP2O5EDCAY3pH5ArrotifS2FeLC4Q2Nc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWdk/LmFlcGxjZG4uY29t/LzM3MHgyMDgvbi9j/dy9lYy81ODAyNS9y/aWdodC1zaWRlLXZp/ZXcuanBlZz9xPTgw",
       "content": [
         "Git é um sistema de controle de versão distribuído que permite rastrear alterações no código ao longo do tempo. É essencial para o trabalho em equipe.",
         "<h2>Comandos Básicos</h2>",
@@ -123,7 +123,7 @@
         "4. `git push`: Envia as alterações para o repositório remoto (GitHub/GitLab).",
         "Dominar o Git é um dos requisitos básicos para qualquer desenvolvedor."
       ],
-      "updatedAt": "2025-12-09T10:05:27.941Z",
+      "updatedAt": "2025-12-10T10:29:22.550Z",
       "id": "10"
     },
     {

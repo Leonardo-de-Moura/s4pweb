@@ -64,19 +64,19 @@ nav ul li a svg {
   transition: 0.3s;
 }
 
-/* MENU MOBILE */
+
 @media (max-width: 760px) {
 
-  /* mostra o botão */
+  
   .menu-btn {
     display: flex;
   }
-  /* configura nav como menu lateral */
+  
   header nav {
     position: fixed;
     top: 0;
-    right: -100%;        /* fora da tela */
-    width: 100%;         /* lado direito, quase 100% */
+    right: -100%;        
+    width: 100%;        
     height: 100vh;
     background: var(--color-purple);
     padding-top: 80px;
@@ -84,7 +84,7 @@ nav ul li a svg {
   
   }
 
-  /* quando ativo → entra */
+ 
   header nav.active {
     right: 0;
   }
@@ -108,7 +108,7 @@ nav ul li a svg {
     font-size: 20px;
   }
 
-  /* animação do X */
+ 
   .menu-btn.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }

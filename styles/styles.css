@@ -95,9 +95,7 @@ header h1, span{
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
-.artigos-grid > .card-artigo:nth-last-child(-n + 3) button {
-  display: none;
-}
+
 
 /* Estilização do Card Individual */
 .card-artigo {

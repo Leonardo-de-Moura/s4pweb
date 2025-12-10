@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/import2.css">
-    <script defer src="scripts/page2.js"></script>
+    <script defer src="../scripts/page2.js" type="module"></script>
 </head>
 
 <body>
@@ -87,46 +87,71 @@
             <div class="container-text">
 
                 <blockquote>
-                    O **React**, criado pelo Facebook (Meta), é uma **biblioteca JavaScript** declarativa e baseada em componentes, usada para construir interfaces de usuário rápidas e eficientes. Ele simplificou o desenvolvimento de SPAs (Single Page Applications) ao introduzir o conceito de **Virtual DOM**.
+                    O **React**, criado pelo Facebook (Meta), é uma **biblioteca JavaScript** declarativa e baseada em
+                    componentes, usada para construir interfaces de usuário rápidas e eficientes. Ele simplificou o
+                    desenvolvimento de SPAs (Single Page Applications) ao introduzir o conceito de **Virtual DOM**.
                 </blockquote>
 
                 <h2>Por que usar React?</h2>
 
                 <p>
-                    O principal atrativo do React é a sua abordagem de desenvolvimento baseada em **componentes**. Cada parte da interface do usuário (como um botão, um cabeçalho ou uma lista) é isolada em um componente autônomo. Isso promove a **reutilização de código**, torna o projeto mais organizado e facilita a manutenção, especialmente em aplicações de grande escala.
+                    O principal atrativo do React é a sua abordagem de desenvolvimento baseada em **componentes**. Cada
+                    parte da interface do usuário (como um botão, um cabeçalho ou uma lista) é isolada em um componente
+                    autônomo. Isso promove a **reutilização de código**, torna o projeto mais organizado e facilita a
+                    manutenção, especialmente em aplicações de grande escala.
                 </p>
 
                 <p>
-                    Além da modularidade, o React se destaca pelo desempenho, graças ao **Virtual DOM**. Ao invés de manipular o DOM real (que é lento) a cada mudança de estado, o React atualiza um DOM virtual na memória. Ele calcula as diferenças e aplica as mudanças mínimas necessárias ao DOM real, otimizando drasticamente a velocidade de renderização da interface. 
+                    Além da modularidade, o React se destaca pelo desempenho, graças ao **Virtual DOM**. Ao invés de
+                    manipular o DOM real (que é lento) a cada mudança de estado, o React atualiza um DOM virtual na
+                    memória. Ele calcula as diferenças e aplica as mudanças mínimas necessárias ao DOM real, otimizando
+                    drasticamente a velocidade de renderização da interface.
                 </p>
 
                 <h2>Sobre o ecossistema e ferramentas</h2>
 
                 <p>
-                    O React possui um dos ecossistemas mais vibrantes no desenvolvimento web. Além da biblioteca central, há ferramentas e frameworks cruciais que complementam sua funcionalidade, como o **React Router** para navegação e o **Redux** (ou alternativas como Zustand) para gerenciamento de estado complexo. Para projetos full-stack, o **Next.js** é a solução preferida, adicionando capacidades de renderização do lado do servidor (SSR) e geração estática.
+                    O React possui um dos ecossistemas mais vibrantes no desenvolvimento web. Além da biblioteca
+                    central, há ferramentas e frameworks cruciais que complementam sua funcionalidade, como o **React
+                    Router** para navegação e o **Redux** (ou alternativas como Zustand) para gerenciamento de estado
+                    complexo. Para projetos full-stack, o **Next.js** é a solução preferida, adicionando capacidades de
+                    renderização do lado do servidor (SSR) e geração estática.
                 </p>
 
                 <p>
-                    Para o desenvolvimento mobile, o **React Native** permite que desenvolvedores usem a mesma lógica e o paradigma de componentes para criar aplicativos nativos para iOS e Android. Essa interoperabilidade reduz a curva de aprendizado e o tempo de desenvolvimento, tornando o React uma escolha versátil.
+                    Para o desenvolvimento mobile, o **React Native** permite que desenvolvedores usem a mesma lógica e
+                    o paradigma de componentes para criar aplicativos nativos para iOS e Android. Essa
+                    interoperabilidade reduz a curva de aprendizado e o tempo de desenvolvimento, tornando o React uma
+                    escolha versátil.
                 </p>
 
                 <h2>Como utilizar a biblioteca</h2>
 
                 <p>
-                    Começar com React é relativamente simples. A forma recomendada de iniciar um projeto moderno é utilizando uma ferramenta de scaffolding como o **Vite** ou a configuração completa do **Next.js**. O código React é escrito usando **JSX** (JavaScript XML), que permite combinar a sintaxe HTML com a lógica JavaScript.
+                    Começar com React é relativamente simples. A forma recomendada de iniciar um projeto moderno é
+                    utilizando uma ferramenta de scaffolding como o **Vite** ou a configuração completa do **Next.js**.
+                    O código React é escrito usando **JSX** (JavaScript XML), que permite combinar a sintaxe HTML com a
+                    lógica JavaScript.
                 </p>
 
                 <ul>
-                    <li>**Hooks:** Aprenda a utilizar `useState` para gerenciar variáveis de estado e `useEffect` para executar lógica após a renderização (como buscar dados de uma API).</li>
-                    <li>**Props:** Entenda como passar dados e funções de um componente pai para um componente filho usando as propriedades (props).</li>
-                    <li>**Componentes Funcionais:** Priorize a criação de componentes funcionais em detrimento das classes, aproveitando os benefícios dos Hooks.</li>
-                    <li>**Testes:** Utilize bibliotecas como **Jest** e **React Testing Library** para garantir a qualidade e o funcionamento correto dos seus componentes.</li>
+                    <li>**Hooks:** Aprenda a utilizar `useState` para gerenciar variáveis de estado e `useEffect` para
+                        executar lógica após a renderização (como buscar dados de uma API).</li>
+                    <li>**Props:** Entenda como passar dados e funções de um componente pai para um componente filho
+                        usando as propriedades (props).</li>
+                    <li>**Componentes Funcionais:** Priorize a criação de componentes funcionais em detrimento das
+                        classes, aproveitando os benefícios dos Hooks.</li>
+                    <li>**Testes:** Utilize bibliotecas como **Jest** e **React Testing Library** para garantir a
+                        qualidade e o funcionamento correto dos seus componentes.</li>
                 </ul>
 
                 <h3>Conclusão: React como Padrão de Mercado</h3>
 
                 <p>
-                    O React JS não é apenas uma moda passageira, mas um padrão de mercado. Sua ênfase na modularidade, sua performance otimizada via Virtual DOM e o apoio de um vasto ecossistema garantem que os desenvolvedores podem construir experiências de usuário ricas e de alto desempenho. Dominar o React é um passo fundamental para qualquer profissional de desenvolvimento front-end moderno.
+                    O React JS não é apenas uma moda passageira, mas um padrão de mercado. Sua ênfase na modularidade,
+                    sua performance otimizada via Virtual DOM e o apoio de um vasto ecossistema garantem que os
+                    desenvolvedores podem construir experiências de usuário ricas e de alto desempenho. Dominar o React
+                    é um passo fundamental para qualquer profissional de desenvolvimento front-end moderno.
                 </p>
                 <div class="share">
                     <p>Compartilhe esse conteúdo</p>
@@ -197,7 +222,8 @@
             <div class="articles-grid">
 
                 <div class="article-card">
-                    <img src="assets/image copy 4.png" alt="Visualização em óculos de realidade virtual.">
+                    <img src="https://imgs.search.brave.com/QJVEsuQ8EOieRcVL0LqbwSXcRR6xKJMuWsIgoIHt-1E/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOC8w/NC8xMy8yMS8yNC9s/aW9uLTMzMTc2NzBf/NjQwLmpwZw"
+                        alt="">
                     <div class="content1">
                         <span class="category">TECNOLOGIA</span>
                         <h3>Realidade virtual: Entendendo a tecnologia</h3>
@@ -206,7 +232,8 @@
                 </div>
 
                 <div class="article-card">
-                    <img src="assets/image copy 5.png" alt="Desenvolvedor digitando rapidamente em um teclado.">
+                    <img src="https://imgs.search.brave.com/yQWwJ5q8eXJM5eZ5O_7kjVaYJhNQO0ze1-OGCdX2Foo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTQz/MjMyNDgvcHQvZm90/by9ncmFuZGUtbGUl/QzMlQTNvLW1vc3Ry/YXItcXVlLSVDMyVB/OS1vLXJlaS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9TDlv/RGV2V1dhM3VaZ3Vr/OE5QbVBtSEt4dkZu/VmhDWE9CNGNSWFEt/UjdWQT0"
+                        alt="">
                     <div class="content1">
                         <span class="category">TECNOLOGIA</span>
                         <h3>Você fica inseguro(a) na hora de escrever?</h3>
@@ -215,7 +242,8 @@
                 </div>
 
                 <div class="article-card">
-                    <img src="assets/image copy 6.png" alt="Logotipo do React Native no celular.">
+                    <img src="https://imgs.search.brave.com/yQWwJ5q8eXJM5eZ5O_7kjVaYJhNQO0ze1-OGCdX2Foo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTQz/MjMyNDgvcHQvZm90/by9ncmFuZGUtbGUl/QzMlQTNvLW1vc3Ry/YXItcXVlLSVDMyVB/OS1vLXJlaS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9TDlv/RGV2V1dhM3VaZ3Vr/OE5QbVBtSEt4dkZu/VmhDWE9CNGNSWFEt/UjdWQT0"
+                        alt="">
                     <div class="content1">
                         <span class="category">TECNOLOGIA</span>
                         <h3>React Native Weekend – 21° na minha visão</h3>
@@ -229,15 +257,15 @@
         <div class="footer-content-wrapper">
             <div class="footer-col footer-info">
                 <h3>S4Blog</h3>
-                <p>Tudo o que você precisa para evoluir no **Front-end**. Artigos de qualidade sobre React, HTML, CSS e as últimas tendências do mercado.</p>
+                <p>Tudo o que você precisa para evoluir no front-end. Conteúdo atualizado, direto e feito por quem vive
+                    código.</p>
             </div>
 
             <div class="footer-col footer-menu">
-                <h4 class="Text-menu menu-title">Menu</h4>
-
+                <h4>Menu</h4>
                 <ul>
-                    <li><a href="pageTecnologia.html" class="link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                    <li><a target="_blank" href="pageTecnologia.html" class="link"><svg width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M9 8.00008H11" stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round"
                                     stroke-linejoin="round" />
                                 <path d="M5 6.33325L7 7.99992L5 9.66659" stroke="#FFDA34" stroke-width="1.25"
@@ -248,8 +276,8 @@
                                     stroke-linejoin="round" />
                             </svg>
                             Tecnologia</a></li>
-                    <li><a href="pageReactjs.html" class="link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                    <li><a target="_blank" href="pageReactjs.html" class="link"><svg width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M5.33322 2.66668C8.27871 4.13942 11.8604 7.72112 13.3332 10.6666C14.8059 13.6121 13.612 14.806 10.6665 13.3333C7.72103 11.8605 4.13932 8.27881 2.66658 5.33332C1.19383 2.38783 2.38773 1.19393 5.33322 2.66668"
                                     stroke="#FFDA34" stroke-width="1.25" stroke-linecap="round"
@@ -264,8 +292,8 @@
                                     stroke-linejoin="round" />
                             </svg>
                             React JS</a></li>
-                    <li><a href="pageHtml&Css.html" class="link"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                    <li><a target="_blank" href="PageHtml&Css.html" class="link"><svg width="16" height="16"
+                                viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.99917 9.33404L4.66528 8.00015L5.99917 6.66626" stroke="#FFDA34"
                                     stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
                                 <path d="M10.0009 6.66626L11.3347 8.00015L10.0009 9.33404" stroke="#FFDA34"
